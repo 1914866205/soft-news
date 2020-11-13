@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="soft-news-model" />
         <module name="soft-news-common" />
+        <module name="soft-news-model" />
+        <module name="soft-news-service-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="soft-news-common" options="-parameters" />
       <module name="soft-news-model" options="-parameters" />
+      <module name="soft-news-service-api" options="-parameters" />
     </option>
   </component>
 </project>

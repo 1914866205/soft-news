@@ -10,6 +10,7 @@
     <modules>
         <module>soft-news-common</module>
         <module>soft-news-model</module>
+        <module>soft-news-service-api</module>
     </modules>
     <packaging>pom</packaging>
     <!--
