@@ -1,5 +1,5 @@
 
-package com.soft1851.api.controller.my.mapper;
+package com.soft1851.api.my.mapper;
 
 
 import tk.mybatis.mapper.common.Mapper;
