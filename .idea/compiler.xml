@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="soft-news-common" />
+        <module name="mybatis-generator-database" />
         <module name="soft-news-model" />
         <module name="soft-news-service-api" />
         <module name="soft-news-service-user" />
