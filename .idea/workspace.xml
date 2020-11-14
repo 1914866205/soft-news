@@ -2,21 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0335e5-124c-4dfe-8ee4-ff60bfa57dea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/HelloControllerApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-service-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/result/GraceResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/result/ResponseStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/application-prod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -49,6 +64,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -57,6 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/soft-news-service-user/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -70,23 +87,29 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\result" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-user\src\main\resources" />
+    </key>
+  </component>
   <component name="RestServicesNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-        </path>
-        <path>
-          <item name="Found 1 services " type="fcff1e1b:RestServiceStructure$RootNode" />
-          <item name="soft-news-service-user" type="c588b436:RestServiceStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="RunManager">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="soft-news-service-user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.soft1851.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.user.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,12 +146,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605270728585</updated>
-      <workItem from="1605270729878" duration="4126000" />
+      <workItem from="1605270729878" duration="4788000" />
+      <workItem from="1605325430348" duration="3701000" />
+      <workItem from="1605329250208" duration="107000" />
+      <workItem from="1605329375439" duration="119000" />
+      <workItem from="1605329499092" duration="667000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -138,46 +168,66 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="722" y="88" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1605272676026" />
-    <state x="361" y="73" key="#Project_Structure" timestamp="1605270811181">
+    <state x="361" y="70" key="#Notifications" timestamp="1605325740839">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605270811181" />
-    <state width="1321" height="251" key="GridCell.Tab.0.bottom" timestamp="1605274875064">
+    <state x="361" y="70" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1605325740839" />
+    <state x="361" y="73" key="#Project_Structure" timestamp="1605326511438">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.0.center" timestamp="1605274875064">
+    <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605326511438" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605328787879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.0.left" timestamp="1605274875064">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605328787879" />
+    <state x="503" y="173" key="EnvironmentVariablesDialog" timestamp="1605328786654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.0.right" timestamp="1605274875064">
+    <state x="503" y="173" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605328786654" />
+    <state x="980" y="197" key="FileChooserDialogImpl" timestamp="1605329623336">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.1.bottom" timestamp="1605274875065">
+    <state x="980" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605329623336" />
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom" timestamp="1605329912283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605274875065" />
-    <state width="1321" height="251" key="GridCell.Tab.1.center" timestamp="1605274875064">
+    <state width="1493" height="254" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
+    <state width="1493" height="254" key="GridCell.Tab.0.center" timestamp="1605329912282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.1.left" timestamp="1605274875064">
+    <state width="1493" height="254" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605329912282" />
+    <state width="1493" height="254" key="GridCell.Tab.0.left" timestamp="1605329912282">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605274875064" />
-    <state width="1321" height="251" key="GridCell.Tab.1.right" timestamp="1605274875065">
+    <state width="1493" height="254" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605329912282" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right" timestamp="1605329912283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1321" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605274875065" />
+    <state width="1493" height="254" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
+    <state width="1493" height="254" key="GridCell.Tab.1.bottom" timestamp="1605329912283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="254" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
+    <state width="1493" height="254" key="GridCell.Tab.1.center" timestamp="1605329912283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="254" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
+    <state width="1493" height="254" key="GridCell.Tab.1.left" timestamp="1605329912283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="254" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
+    <state width="1493" height="254" key="GridCell.Tab.1.right" timestamp="1605329912283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="254" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605329912283" />
     <state x="498" y="0" key="SettingsEditor" timestamp="1605272719620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605272719620" />
+    <state x="831" y="153" width="642" height="524" key="find.popup" timestamp="1605327582568">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="831" y="153" width="642" height="524" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1605327582568" />
     <state x="178" y="0" key="new project wizard" timestamp="1605272174026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

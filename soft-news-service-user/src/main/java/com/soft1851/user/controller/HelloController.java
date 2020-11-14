@@ -1,7 +1,8 @@
 package com.soft1851.user.controller;
 
 import com.soft1851.api.controller.user.HelloControllerApi;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.soft1851.result.GraceResult;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -12,10 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @createTime 2020年11月13日 20:58:00
  */
 @RestController
+@Slf4j
 public class HelloController implements HelloControllerApi {
-
     @Override
-    public Object hello(){
-        return "hello";
+    public Object hello() {
+        log.info("info:hello");
+        log.warn("warn:hello");
+        log.error("error:hello");
+        return GraceResult.ok("hello");
     }
 }
