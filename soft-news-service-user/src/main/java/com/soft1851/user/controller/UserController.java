@@ -1,7 +1,7 @@
 package com.soft1851.user.controller;
 
 import com.soft1851.api.controller.user.UserControllerApi;
-import com.soft1851.result.GraceResult;
+import com.soft1851.common.result.GraceResult;
 import com.soft1851.user.mapper.AppUserMapper;
 import org.springframework.web.bind.annotation.RestController;
 

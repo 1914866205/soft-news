@@ -53,7 +53,7 @@ mybatis:
 ############################################################
 # 通用 Mapper 配置
 mapper:
-  mappers: com.soft1851.my.mapper.MyMapper  # 自己的通用mapper接口
+  mappers: com.soft1851.api.my.mapper.MyMapper  # 自己的通用mapper接口
   not-empty: false    # 在进行数据库操作的的时候，判断表达式 username != null, 是否追加 username != ''
   identity: MYSQL     # 数据库方言
 # 分页插件配置

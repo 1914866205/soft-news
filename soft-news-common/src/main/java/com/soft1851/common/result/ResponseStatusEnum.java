@@ -1,4 +1,4 @@
-package com.soft1851.result;
+package com.soft1851.common.result;
 
 /**
  * @description: 响应返回枚举

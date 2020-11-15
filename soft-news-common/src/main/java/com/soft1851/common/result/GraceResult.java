@@ -1,4 +1,4 @@
-package com.soft1851.result;
+package com.soft1851.common.result;
 
 import java.util.Map;
 
