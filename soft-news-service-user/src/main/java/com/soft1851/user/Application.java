@@ -15,6 +15,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @MapperScan(basePackages = "com.soft1851.user.mapper")
 @ComponentScan("com.soft1851")
+@ComponentScan("org.n3r")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
