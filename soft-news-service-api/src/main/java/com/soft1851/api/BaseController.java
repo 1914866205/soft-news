@@ -39,6 +39,7 @@ public class BaseController {
     /**
      * 获取BO中的错误信息，可以通过统一的异常处理返回给客户端
      *
+
      * @param result 入参
      * @return
      */
