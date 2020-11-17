@@ -1558,3 +1558,6 @@ java.lang.IllegalArgumentException: Source must not be null
 2020-11-17 18:54:18.025 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-17 18:54:18.036 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-17 18:54:18.188 [main] INFO  com.soft1851.user.Application - Started Application in 8.798 seconds (JVM running for 10.179)
+2020-11-17 18:54:36.123 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-17 18:54:36.123 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-17 18:54:36.129 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
