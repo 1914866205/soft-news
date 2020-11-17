@@ -6,6 +6,7 @@ import com.soft1851.common.exception.GraceException;
 import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.common.utils.DateUtil;
 import com.soft1851.common.utils.DesensitizationUtil;
+import com.soft1851.common.utils.JsonUtil;
 import com.soft1851.common.utils.RedisOperator;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.user.mapper.AppUserMapper;
@@ -92,5 +93,9 @@ public class UserServiceImpl implements UserService {
             GraceException.display(ResponseStatusEnum.USER_UPDATE_ERROR);
         }
 
+        String userId = updateUserInfoBO.getId();
+        //再次查询用户的最新信息，放入redis中
+        AppUser user = getUser(userId);
+        redis.set(REDIS_USER_INFO + ":" + userId, JsonUtil.objectToJson(user));
     }
 }
