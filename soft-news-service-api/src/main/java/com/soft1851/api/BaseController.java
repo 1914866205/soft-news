@@ -31,6 +31,7 @@ public class BaseController {
     public static final String REDIS_USER_TOKEN = "redis_user_token";
     public static final String REDIS_USER_INFO = "redis_user_info";
     public static final Integer COOKIE_MONTH = 30 * 24 * 60 * 60;
+    public static final Integer COOKIE_DELETE = 0;
 
     @Value("${website.domain-name}")
     public String DOMAIN_NAME;
@@ -39,7 +40,6 @@ public class BaseController {
     /**
      * 获取BO中的错误信息，可以通过统一的异常处理返回给客户端
      *
-
      * @param result 入参
      * @return
      */
@@ -78,6 +78,9 @@ public class BaseController {
             cookie.setMaxAge(maxAge);
             cookie.setDomain(DOMAIN_NAME);
             cookie.setPath("/");
+            System.out.println("**********COOKIE**********");
+            System.out.println(cookie.toString());
+            System.out.println("**********COOKIE**********");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
@@ -93,6 +96,12 @@ public class BaseController {
         cookie.setMaxAge(maxAge);
         cookie.setDomain(DOMAIN_NAME);
         cookie.setPath("/");
+        System.out.println("即将响应的Cookie");
+        System.out.println(cookie.getValue());
+        System.out.println(cookie.getName());
+        System.out.println(cookie.getPath());
+        System.out.println(cookie.getMaxAge());
+        System.out.println("即将响应的Cookie");
         response.addCookie(cookie);
     }
 }

@@ -60,4 +60,9 @@ public interface UserControllerApi {
     @ApiOperation(value = "获得用户基础信息", notes = "获得用户基础信息", httpMethod = "POST")
     GraceResult getUserBasicInfo(@RequestParam String userId);
 
+
+    @PostMapping("/follow")
+    @ApiOperation(value = "测试", notes = "测试", httpMethod = "POST")
+    GraceResult follow();
+
 }

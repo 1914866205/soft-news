@@ -12,3 +12,8 @@ spring:
 # 设置域名，在java代码中获取
 website:
   domain-name: www.taotao.com
+
+# dev环境开启mybatis日志
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

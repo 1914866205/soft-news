@@ -99,4 +99,9 @@ public class UserController extends BaseController implements UserControllerApi 
         BeanUtils.copyProperties(user, userVO);
         return GraceResult.ok(userVO);
     }
+
+    @Override
+    public GraceResult follow() {
+        return GraceResult.ok("我被访问啦");
+    }
 }

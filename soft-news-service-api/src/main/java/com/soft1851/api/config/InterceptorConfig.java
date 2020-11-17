@@ -42,7 +42,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
                 .addPathPatterns("/user/updateUserInfo");
 
         registry.addInterceptor(userActiveInterceptor())
-                .addPathPatterns("/fan/follow");
+                .addPathPatterns("/user/follow");
+
     }
 
 
