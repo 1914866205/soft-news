@@ -8,7 +8,9 @@ import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.user.mapper.AppUserMapper;
 import com.soft1851.user.service.UserService;
+import com.soft1851.vo.AppUserVO;
 import com.soft1851.vo.UserAccountInfoVO;
+import io.netty.util.internal.StringUtil;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -65,4 +67,21 @@ public class UserController extends BaseController implements UserControllerApi 
         return GraceResult.ok();
     }
 
+    private AppUser getUser(String userId) {
+        return userService.getUser(userId);
+    }
+
+    @Override
+    public GraceResult getUserBasicInfo(String userId) {
+        //1.判断不能为空
+        if (StringUtils.isBlank(userId)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.UN_LOGIN);
+        }
+        //2.查询userId
+        AppUser user =getUser(userId);
+        //3.信息脱敏，设置不显示
+        AppUserVO userVO = new AppUserVO();
+        BeanUtils.copyProperties(user, userVO);
+        return GraceResult.ok(userVO);
+    }
 }
