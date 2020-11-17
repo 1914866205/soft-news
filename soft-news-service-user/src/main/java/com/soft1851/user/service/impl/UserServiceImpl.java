@@ -1,14 +1,21 @@
 package com.soft1851.user.service.impl;
 
+import com.soft1851.bo.UpdateUserInfoBO;
 import com.soft1851.common.enums.UserStatus;
+import com.soft1851.common.exception.GraceException;
+import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.common.utils.DateUtil;
 import com.soft1851.common.utils.DesensitizationUtil;
 import com.soft1851.common.utils.RedisOperator;
 import com.soft1851.pojo.AppUser;
 import com.soft1851.user.mapper.AppUserMapper;
 import com.soft1851.user.service.UserService;
+import com.soft1851.vo.UserAccountInfoVO;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.checkerframework.checker.units.qual.A;
 import org.n3r.idworker.Sid;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -25,6 +32,7 @@ import java.util.Date;
  * @createTime 2020年11月16日 16:23:00
  */
 @Service
+@Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class UserServiceImpl implements UserService {
     public final AppUserMapper appUserMapper;
@@ -69,5 +77,20 @@ public class UserServiceImpl implements UserService {
     @Override
     public AppUser getUser(String userId) {
         return appUserMapper.selectByPrimaryKey(userId);
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public void updateUserInfo(UpdateUserInfoBO updateUserInfoBO) {
+        AppUser userInfo = new AppUser();
+        BeanUtils.copyProperties(updateUserInfoBO, userInfo);
+        userInfo.setUpdatedTime(new Date());
+        userInfo.setActiveStatus(UserStatus.ACTIVE.type);
+
+        int result = appUserMapper.updateByPrimaryKeySelective(userInfo);
+        if (result != 1) {
+            GraceException.display(ResponseStatusEnum.USER_UPDATE_ERROR);
+        }
+
     }
 }

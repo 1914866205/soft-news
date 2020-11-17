@@ -1,12 +1,13 @@
 package com.soft1851.api.controller.user;
 
+import com.soft1851.bo.UpdateUserInfoBO;
 import com.soft1851.common.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 /**
  * @author 倪涛涛
@@ -23,17 +24,23 @@ public interface UserControllerApi {
      *
      * @return
      */
-    @ApiOperation(value = "获得所有用户信息",notes = "获得所有用户信息",httpMethod = "Get")
+    @ApiOperation(value = "获得所有用户信息", notes = "获得所有用户信息", httpMethod = "GET")
     @GetMapping("/users")
     Object getUsers();
 
     /**
      * 获得用户基本信息
+     *
      * @param userId 用户id
      * @return
      */
     @ApiOperation(value = "获得用户账户信息", notes = "获得用户账户信息", httpMethod = "GET")
     @PostMapping("/userInfo")
     GraceResult geyUserInfo(@RequestParam String userId);
+
+
+    @PostMapping("/updateUserInfo")
+    @ApiOperation(value = "完善用户信息", notes = "完善用户信息", httpMethod = "POST")
+    GraceResult updateUserInfo(@RequestBody @Valid UpdateUserInfoBO updateUserInfoBO, BindingResult result);
 
 }
