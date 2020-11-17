@@ -97,8 +97,9 @@ public class PassportController extends BaseController implements PassportContro
             //保存token到redis
             String uToken = UUID.randomUUID().toString();
             redis.set(REDIS_USER_TOKEN + ":" + user.getId(), uToken);
+            System.out.println("token:");
+            System.out.println(uToken);
             redis.set(REDIS_USER_INFO + ":" + user.getId(), JsonUtil.objectToJson(user));
-
             //保存用户id和token到cookie中
             setCookie(request, response, "utoken", uToken, COOKIE_MONTH);
             setCookie(request, response, "uid", user.getId(), COOKIE_MONTH);

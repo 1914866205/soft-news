@@ -94,6 +94,8 @@ public class UserController extends BaseController implements UserControllerApi 
         AppUser user =getUser(userId);
         //3.信息脱敏，设置不显示
         AppUserVO userVO = new AppUserVO();
+        System.out.println(user);
+        System.out.println(userVO);
         BeanUtils.copyProperties(user, userVO);
         return GraceResult.ok(userVO);
     }
