@@ -106,6 +106,14 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.51</version>
         </dependency>
+
+<!--        fastDfS-->
+        <dependency>
+            <groupId>org.csource</groupId>
+            <artifactId>fastdfs-client-java</artifactId>
+            <version>1.29-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>
