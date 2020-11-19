@@ -12,6 +12,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author 倪涛涛
  * @version 1.0.0
@@ -73,4 +76,61 @@ public class FileUploadController implements FileUploadControllerApi {
         }
         return GraceResult.ok(finalPath);
     }
+
+    /**
+     * @param userId 用户id
+     * @param files  文件数组
+     * @return
+     * @throws Exception
+     */
+    @Override
+    public GraceResult uploadSomeFiles(String userId, MultipartFile[] files) throws Exception {
+        //声明list，用于存放多个图片的地址路径，返回到前端
+        List<String> imageUrlList = new ArrayList<>();
+        System.out.println("files" + files.toString());
+        System.out.println("userId" + userId);
+        System.out.println(files != null);
+        System.out.println(files.length);
+        System.out.println(files.length > 0);
+        if (files != null && files.length > 0) {
+            for (MultipartFile file : files) {
+                String path;
+                if (file != null) {
+                    // 获得文件上传的名称
+                    String fileName = file.getOriginalFilename();
+                    System.out.println("fileName" + fileName);
+                    //判断文件名不能为空
+                    if (StringUtils.isNotBlank(fileName)) {
+                        String[] fileNameArr = fileName.split("\\.");
+                        //获得后缀
+                        String suffix = fileNameArr[fileNameArr.length - 1];
+                        //判断后缀符合我们的预定义规范
+                        if (!"png".equalsIgnoreCase(suffix) &&
+                                !"jpg".equalsIgnoreCase(suffix) &&
+                                !"jpeg".equalsIgnoreCase(suffix)) {
+                            continue;
+                        }
+                        //执行上传
+                        path = uploadService.uploadOSS(file, userId, suffix);
+                        System.out.println("path" + path);
+                    } else {
+                        continue;
+                    }
+                } else {
+                    continue;
+                }
+                String finalPath;
+                if (StringUtils.isNotBlank(path)) {
+                    finalPath = fileResource.getOssHost() + path;
+
+                    System.out.println("finalPath" + finalPath);
+                    imageUrlList.add(finalPath);
+                }
+            }
+        }
+        System.out.println("imageUrlList" + imageUrlList);
+        return GraceResult.ok(imageUrlList);
+    }
+
+
 }
