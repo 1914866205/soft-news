@@ -334,3 +334,24 @@ java.lang.NullPointerException: null
 2020-11-18 11:45:12.704 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
 2020-11-18 11:45:12.869 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2020-11-18 11:45:12.869 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1861 ms
+2020-11-18 11:45:15.610 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-18 11:45:15.610 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 11:45:15.614 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-18 11:45:15.614 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-18 11:45:15.754 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-18 11:45:15.883 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-18 11:45:15.884 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-18 11:45:15.884 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-18 11:45:15.885 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-18 11:45:17.555 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+2020-11-18 11:45:17.579 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+2020-11-18 11:45:18.809 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-18 11:45:18.822 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-18 11:45:18.831 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-18 11:45:19.006 [main] INFO  com.soft1851.user.Application - Started Application in 11.567 seconds (JVM running for 13.268)
+2020-11-18 11:45:25.878 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-18 11:45:25.878 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-18 11:45:25.887 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-18 11:45:25.949 [http-nio-8003-exec-1] INFO  c.s.common.utils.FastDFSClient - File Name: 20201031.jpgFile Length: 405969
+2020-11-18 11:45:26.397 [http-nio-8003-exec-1] INFO  c.s.common.utils.FastDFSClient - upload_file time used:447 ms
+2020-11-18 11:45:26.397 [http-nio-8003-exec-1] INFO  c.s.common.utils.FastDFSClient - upload file successfully!!!group_name:group1, remoteFileName: M00/00/00/eBqxM1-0mNKAFjWJAAYx0diJN8k989.jpg

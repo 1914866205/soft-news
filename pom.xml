@@ -12,6 +12,7 @@
         <module>soft-news-model</module>
         <module>soft-news-service-api</module>
         <module>soft-news-service-user</module>
+        <module>soft-news-service-files</module>
     </modules>
     <packaging>pom</packaging>
     <!--
