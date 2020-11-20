@@ -44,7 +44,7 @@ public class Swaggers {
                 .title("新闻丶自媒体接口api")
                 .contact(new Contact("taotao", "http://www.qq.com","1914866205@qq.com"))
                 .description("1.0.1")
-                .termsOfServiceUrl("https://www.sn.com")
+                .termsOfServiceUrl("https://www.taotao.com")
                 .build();
     }
 }

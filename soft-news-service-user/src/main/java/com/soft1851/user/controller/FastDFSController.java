@@ -6,6 +6,7 @@ import org.csource.common.NameValuePair;
 import org.csource.fastdfs.FileInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -128,5 +129,10 @@ public class FastDFSController {
         }
         String path = FastDFSClient.getTrackerUrl() + fileAbsolutePath[0] + "/" + fileAbsolutePath[1];
         return path;
+    }
+
+    public static void main(String[] args) {
+        String pwd = BCrypt.hashpw("123123", BCrypt.gensalt());
+        System.out.println(pwd);
     }
 }

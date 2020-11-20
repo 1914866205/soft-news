@@ -20,7 +20,7 @@ spring:
     name: service-admin
   datasource:                                         # 数据源的相关配置
     type: com.zaxxer.hikari.HikariDataSource          # 数据源类型：HikariCP
-    driver-class-name: com.mysql.jdbc.Driver          # mysql驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver          # mysql驱动
     url: jdbc:mysql://localhost:3306/soft_news?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=GMT%2B8 # 东8区
     username: root
     password: root
@@ -51,7 +51,7 @@ mybatis:
 ############################################################
 # 通用 Mapper 配置
 mapper:
-  mappers: com.soft1851.my.mapper.MyMapper  # 自己的通用mapper接口
+  mappers: com.soft1851.api.my.mapper.MyMapper  # 自己的通用mapper接口
   not-empty: false    # 在进行数据库操作的的时候，判断表达式 username != null, 是否追加 username != ''
   identity: MYSQL
 # 分页插件配置
