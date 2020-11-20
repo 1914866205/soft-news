@@ -33,7 +33,8 @@ public class BaseController {
     public static final String REDIS_ADMIN_INFO = "redis_admin_token";
     public static final Integer COOKIE_MONTH = 30 * 24 * 60 * 60;
     public static final Integer COOKIE_DELETE = 0;
-
+    public static final Integer COMMON_START_PAGE = 1;
+    public static final Integer COMMON_PAGE_SIZE = 10;
 
     @Value("${website.domain-name}")
     public String DOMAIN_NAME;

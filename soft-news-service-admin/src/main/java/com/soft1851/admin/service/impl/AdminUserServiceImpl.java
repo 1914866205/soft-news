@@ -1,10 +1,13 @@
 package com.soft1851.admin.service.impl;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.soft1851.admin.mapper.AdminUserMapper;
 import com.soft1851.admin.service.AdminUserService;
 import com.soft1851.bo.NewAdminBO;
 import com.soft1851.common.exception.GraceException;
 import com.soft1851.common.result.ResponseStatusEnum;
+import com.soft1851.common.utils.PageGridResult;
 import com.soft1851.pojo.AdminUser;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
@@ -17,6 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author 倪涛涛
@@ -66,5 +70,26 @@ public class AdminUserServiceImpl implements AdminUserService {
         if (result != 1) {
             GraceException.display(ResponseStatusEnum.ADMIN_NOT_EXIT_ERROR);
         }
+    }
+
+    @Override
+    public PageGridResult queryAdminList(Integer page, Integer pageSize) {
+        Example adminExample = new Example(AdminUser.class);
+        adminExample.orderBy("createdTime").desc();
+
+        PageHelper.startPage(page, pageSize);
+        List<AdminUser> adminUserList = adminUserMapper.selectByExample(adminExample);
+
+        return setterPagedGrid(adminUserList, page);
+    }
+
+    private PageGridResult setterPagedGrid(List<?> adminUserList, Integer page) {
+        PageInfo<?> pageList = new PageInfo<>(adminUserList);
+        PageGridResult gridResult = new PageGridResult();
+        gridResult.setRows(adminUserList);
+        gridResult.setPage(page);
+        gridResult.setRecord(pageList.getPages());
+        gridResult.setTotal(pageList.getTotal());
+        return gridResult;
     }
 }

@@ -8,6 +8,7 @@ import com.soft1851.bo.NewAdminBO;
 import com.soft1851.common.exception.GraceException;
 import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
+import com.soft1851.common.utils.PageGridResult;
 import com.soft1851.pojo.AdminUser;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +44,7 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         if (isPwdMatch) {
             doLoginSetting(admin, request, response);
             return GraceResult.ok();
-        }else {
+        } else {
             //密码不匹配
             return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_NOT_EXIT_ERROR);
         }
@@ -67,21 +68,21 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         String token = UUID.randomUUID().toString();
         redis.set(REDIS_ADMIN_INFO + ":" + admin.getId(), token);
         //保存admin登录基本token到cookie中
-        setCookie(request, response, "aToken",token , COOKIE_MONTH);
-        setCookie(request, response, "aId",admin.getId() , COOKIE_MONTH);
+        setCookie(request, response, "aToken", token, COOKIE_MONTH);
+        setCookie(request, response, "aId", admin.getId(), COOKIE_MONTH);
         setCookie(request, response, "aName", admin.getAdminName(), COOKIE_MONTH);
-        System.out.println("aToken"+token );
-        System.out.println("aId"+admin.getId()  );
-        System.out.println("aName"+ admin.getAdminName());
+        System.out.println("aToken" + token);
+        System.out.println("aId" + admin.getId());
+        System.out.println("aName" + admin.getAdminName());
     }
 
     @Override
     public GraceResult addNewAdmin(HttpServletRequest request, HttpServletResponse response, NewAdminBO newAdminBO) {
         // 1.BASE64不为空，则代表人脸入库，否则需要用户输入密码和确认密码
         if (StringUtils.isBlank(newAdminBO.getImg64())) {
-            if (StringUtils.isBlank(newAdminBO.getPassword())||
-            StringUtils.isBlank(newAdminBO.getConfirmationPassword())
-            ){
+            if (StringUtils.isBlank(newAdminBO.getPassword()) ||
+                    StringUtils.isBlank(newAdminBO.getConfirmationPassword())
+            ) {
                 return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_PASSWORD_NULL_ERROR);
             }
         }
@@ -99,4 +100,23 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         adminUserService.createAdminUser(newAdminBO);
         return GraceResult.ok();
     }
+
+    /**
+     * @param page     当前页码
+     * @param pageSize 页数
+     * @return
+     */
+    @Override
+    public GraceResult getAdminList(Integer page, Integer pageSize) {
+        if (page == null) {
+            page = COMMON_START_PAGE;
+        }
+
+        if (pageSize == null) {
+            pageSize = COMMON_PAGE_SIZE;
+        }
+        PageGridResult result = adminUserService.queryAdminList(page, pageSize);
+        return GraceResult.ok(result);
+    }
+
 }
