@@ -17,7 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.UUID;
+
+import static com.soft1851.api.interceptors.BaseInterceptor.REDIS_ADMIN_TOKEN;
 
 /**
  * @author 倪涛涛
@@ -119,4 +123,21 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         return GraceResult.ok(result);
     }
 
+    /**
+     *
+     * @param adminId 管理员id
+     * @param request 请求
+     * @param response 响应
+     * @return
+     */
+    @Override
+    public GraceResult adminLogout(String adminId, HttpServletRequest request, HttpServletResponse response) {
+       // 1.从redis中删除admin的会话token
+        redis.del(REDIS_ADMIN_TOKEN + ":" + adminId);
+        // 2.从cookie中清理admin登录的相关信息
+        deleteCookie(request,response,"aToken");
+        deleteCookie(request,response,"aId");
+        deleteCookie(request, response, "aName");
+        return GraceResult.ok();
+    }
 }

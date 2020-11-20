@@ -57,4 +57,16 @@ public interface AdminMsgControllerApi {
                              @ApiParam(name = "pageSize", value = "分页查询每一页显示的条数")
                              @RequestParam Integer pageSize);
 
+
+    /**
+     * 退出登录
+     * @param adminId 管理员id
+     * @param request 请求
+     * @param response 响应
+     * @return 返回
+     */
+    @ApiOperation(value = "管理员注销", notes = "管理员注销", httpMethod = "POST")
+    @PostMapping("adminLogout")
+    GraceResult adminLogout(@RequestParam String adminId, HttpServletRequest request, HttpServletResponse response);
+
 }
