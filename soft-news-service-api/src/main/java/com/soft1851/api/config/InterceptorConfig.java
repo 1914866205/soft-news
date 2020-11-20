@@ -1,5 +1,6 @@
 package com.soft1851.api.config;
 
+import com.soft1851.api.interceptors.AdminTokenInterceptor;
 import com.soft1851.api.interceptors.PassportInterceptor;
 import com.soft1851.api.interceptors.UserActiveInterceptor;
 import com.soft1851.api.interceptors.UserTokenInterceptor;
@@ -28,9 +29,17 @@ public class InterceptorConfig implements WebMvcConfigurer {
     }
 
     @Bean
+    public AdminTokenInterceptor adminTokenInterceptor(){
+        return new AdminTokenInterceptor();
+    }
+
+
+    @Bean
     public UserActiveInterceptor userActiveInterceptor() {
         return new UserActiveInterceptor();
     }
+
+
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
@@ -43,6 +52,9 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
         registry.addInterceptor(userActiveInterceptor())
                 .addPathPatterns("/user/follow");
+
+        registry.addInterceptor(adminTokenInterceptor())
+                .addPathPatterns("/adminMsg/adminIsExist");
 
     }
 
