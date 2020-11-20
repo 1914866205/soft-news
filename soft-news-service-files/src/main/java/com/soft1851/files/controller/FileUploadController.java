@@ -3,6 +3,7 @@ package com.soft1851.files.controller;
 import com.soft1851.api.controller.files.FileUploadControllerApi;
 import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
+import com.soft1851.common.utils.extend.AliImageReviewUtil;
 import com.soft1851.files.resource.FileResource;
 import com.soft1851.files.service.UploadService;
 import lombok.RequiredArgsConstructor;
@@ -28,6 +29,12 @@ import java.util.List;
 public class FileUploadController implements FileUploadControllerApi {
     private final UploadService uploadService;
     private final FileResource fileResource;
+    private final AliImageReviewUtil aliImageReviewUtil;
+
+    /**
+     * 检测不通过的默认图片
+     */
+    public static final String FAILED_IMAGE_URL = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3955828120,32488320&fm=26&gp=0.jpg";
 
     /**
      * @param userId 用户id
@@ -59,7 +66,8 @@ public class FileUploadController implements FileUploadControllerApi {
                     return GraceResult.errorCustom(ResponseStatusEnum.FILE_FORMATTER_FAILD);
                 }
                 // 执行上传服务，得到回调路径
-                path = uploadService.uploadFdfs(file, suffix);
+//                path = uploadService.uploadFdfs(file, suffix);
+                path = uploadService.uploadOSS(file, userId,suffix);
             } else {
                 return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_NULL_ERROR);
             }
@@ -69,12 +77,13 @@ public class FileUploadController implements FileUploadControllerApi {
         log.info("path=" + path);
         String finalPath;
         if (StringUtils.isNotBlank(path)) {
-            finalPath = fileResource.getHost() + path;
+            finalPath = fileResource.getOssHost() + path;
             log.info("finalPath=" + finalPath);
         } else {
             return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_NULL_ERROR);
         }
-        return GraceResult.ok(finalPath);
+        return GraceResult.ok(doAliImageReview(finalPath));
+//        return GraceResult.ok(finalPath);
     }
 
     /**
@@ -132,5 +141,22 @@ public class FileUploadController implements FileUploadControllerApi {
         return GraceResult.ok(imageUrlList);
     }
 
-
+    /**
+     * 阿里云图片智能检测
+     * @param pendingImageUrl 图片路径
+     * @return
+     */
+    private String doAliImageReview(String pendingImageUrl) {
+        log.info(pendingImageUrl);
+        boolean result = false;
+        try {
+            result = aliImageReviewUtil.reviewImage(pendingImageUrl);
+        } catch (Exception e) {
+            System.err.println("图片识别出错");
+        }
+        if (!result) {
+            return FAILED_IMAGE_URL;
+        }
+        return pendingImageUrl;
+    }
 }
