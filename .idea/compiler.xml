@@ -11,6 +11,7 @@
         <module name="soft-news-model" />
         <module name="soft-news-service-files" />
         <module name="soft-news-common" />
+        <module name="soft-news-service-admin" />
         <module name="soft-news-service-api" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="soft-news-common" options="-parameters" />
       <module name="soft-news-model" options="-parameters" />
+      <module name="soft-news-service-admin" options="-parameters" />
       <module name="soft-news-service-api" options="-parameters" />
       <module name="soft-news-service-files" options="-parameters" />
       <module name="soft-news-service-user" options="-parameters" />
