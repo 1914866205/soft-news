@@ -7,3 +7,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     password:
+
+# 设置域名，在java代码中获取
+website:
+  domain-name: files.sn.com

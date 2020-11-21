@@ -1,6 +1,6 @@
 package com.soft1851.files;
 
-import com.mongodb.MongoClient;
+import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.gridfs.GridFSBucket;
 import com.mongodb.client.gridfs.GridFSBuckets;
@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class GridConfig {
-    @Value("${spring.data.mongodb.database")
+    @Value("${spring.data.mongodb.database}")
     private String mongodb;
 
     /**
@@ -27,6 +27,11 @@ public class GridConfig {
      */
     @Bean
     public GridFSBucket gridFSBucket(MongoClient mongoClient) {
+        System.out.println(mongodb);
+        System.out.println(mongodb);
+        System.out.println(mongodb);
+        System.out.println(mongodb);
+        System.out.println(mongodb);
         MongoDatabase mongoDatabase = mongoClient.getDatabase(mongodb);
         return GridFSBuckets.create(mongoDatabase);
     }
