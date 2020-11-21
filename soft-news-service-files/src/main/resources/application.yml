@@ -22,6 +22,10 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  data:
+    mongodb:
+      uri: mongodb://root:root@120.26.177.51:27817
+      database: soft_news
   servlet:
     multipart:
       max-file-size: 512000   # 请求的文件大小限制为500kb

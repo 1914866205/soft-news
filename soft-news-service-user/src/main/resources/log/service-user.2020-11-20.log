@@ -1714,3 +1714,32 @@ Caused by: java.lang.ClassCastException: sun.reflect.generics.reflectiveObjects.
 2020-11-20 20:09:46.243 [http-nio-8005-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：590
 2020-11-20 20:24:28.754 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
 2020-11-20 20:24:29.411 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-20 20:24:31.786 [main] INFO  com.soft1851.admin.Application - The following profiles are active: dev
+2020-11-20 20:24:32.680 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-20 20:24:32.683 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-20 20:24:32.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-20 20:24:32.868 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soft1851.admin]' package. Please check your configuration.
+2020-11-20 20:24:32.956 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c8f6cbd3-94b9-3ccb-b765-a6a73a58cb68
+2020-11-20 20:24:34.513 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2020-11-20 20:24:34.525 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8005"]
+2020-11-20 20:24:34.525 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-20 20:24:34.526 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-20 20:24:34.694 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-20 20:24:34.694 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2887 ms
+2020-11-20 20:24:36.755 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-20 20:24:36.755 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-20 20:24:36.761 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-20 20:24:36.761 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-20 20:24:36.898 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-20 20:24:37.017 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-11-20 20:24:37.018 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-11-20 20:24:37.019 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-11-20 20:24:37.019 [main] INFO  t.m.m.a.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-11-20 20:24:39.515 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-20 20:24:39.664 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8005"]
+2020-11-20 20:24:39.691 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path ''
+2020-11-20 20:24:41.941 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2020-11-20 20:24:41.948 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-20 20:24:41.964 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-20 20:24:42.027 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-20 20:24:42.187 [main] INFO  com.soft1851.admin.Application - Started Application in 16.346 seconds (JVM running for 17.066)

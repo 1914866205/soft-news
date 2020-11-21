@@ -14,4 +14,4 @@ mybatis:
 
 # 设置域名，在java代码中获取，这里是资源配置
 website:
-  domain-name: www.taotao.com
+  domain-name: admin.sn.com

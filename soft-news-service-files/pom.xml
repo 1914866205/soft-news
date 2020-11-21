@@ -12,14 +12,14 @@
     <artifactId>soft-news-service-files</artifactId>
 
     <dependencies>
-<!--        引入api模块-->
+        <!--        引入api模块-->
         <dependency>
             <groupId>com.soft1851</groupId>
             <artifactId>soft-news-service-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
-<!--        文件上传fdfs工具-->
+        <!--        文件上传fdfs工具-->
         <dependency>
             <groupId>com.github.tobato</groupId>
             <artifactId>fastdfs-client</artifactId>
@@ -30,15 +30,24 @@
                 </exclusion>
             </exclusions>
         </dependency>
-<!--        lombok-->
+        <!--        lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
         </dependency>
-    </dependencies>
 
+        <!--        mongodb-->
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

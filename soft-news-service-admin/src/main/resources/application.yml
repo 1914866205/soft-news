@@ -36,6 +36,10 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  data:
+    mongodb:
+      uri: mongodb://root:root@120.26.177.51:27817
+      database: soft_news
 ############################################################
 #
 # mybatis 配置
