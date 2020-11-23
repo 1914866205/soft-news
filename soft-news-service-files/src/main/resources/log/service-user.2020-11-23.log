@@ -107,3 +107,7 @@
 2020-11-23 13:29:07.464 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-23 13:29:07.605 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
 2020-11-23 13:29:07.619 [main] INFO  com.soft1851.files.Application - Started Application in 22.842 seconds (JVM running for 25.03)
+2020-11-23 13:29:34.456 [http-nio-8004-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 13:29:34.457 [http-nio-8004-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 13:29:34.496 [http-nio-8004-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+2020-11-23 13:29:35.376 [http-nio-8004-exec-2] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:124}] to 120.26.177.51:27017
