@@ -46,7 +46,8 @@ public interface AdminMsgControllerApi {
 
     /**
      * 分页查询管理员
-     * @param page 当前页码
+     *
+     * @param page     当前页码
      * @param pageSize 页数
      * @return 返回
      */
@@ -74,14 +75,22 @@ public interface AdminMsgControllerApi {
 
     /**
      * 修改管理员信息
-     * @param request 请求
-     * @param response 响应
+     *
+     * @param request    请求
+     * @param response   响应
      * @param newAdminBO 入参
      * @return
      */
     @PostMapping("updateAdmin")
     @ApiOperation(value = "修改管理员信息", notes = "修改管理员信息", httpMethod = "POST")
     GraceResult updateAdmin(HttpServletRequest request, HttpServletResponse response, @RequestBody NewAdminBO newAdminBO);
+
+    @PostMapping("adminFaceLogin")
+    @ApiOperation(value = "管理员人脸登录", notes = "管理员人脸登录", httpMethod = "POST")
+    GraceResult adminFaceLogin(@RequestBody AdminLoginBO adminLoginBO,
+                               HttpServletRequest request,
+                               HttpServletResponse response);
+
 
 
 

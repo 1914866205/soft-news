@@ -8,15 +8,21 @@ import com.soft1851.bo.NewAdminBO;
 import com.soft1851.common.exception.GraceException;
 import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
+import com.soft1851.common.utils.FaceVerifyType;
+import com.soft1851.common.utils.FaceVerifyUtil;
 import com.soft1851.common.utils.PageGridResult;
 import com.soft1851.pojo.AdminUser;
 import com.sun.corba.se.spi.ior.ObjectId;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -41,6 +47,9 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
 
     @Autowired
     private AdminUserService adminUserService;
+    @Autowired
+    private RestTemplate restTemplate;
+
 
     @Override
     public GraceResult adminLogin(AdminLoginBO adminLoginBO, HttpServletRequest request, HttpServletResponse response) {
@@ -147,16 +156,53 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
     }
 
     /**
-     *
-     * @param request 请求
-     * @param response 响应
+     * @param request    请求
+     * @param response   响应
      * @param newAdminBO 入参
      * @return
      */
     @Override
     public GraceResult updateAdmin(HttpServletRequest request, HttpServletResponse response, NewAdminBO newAdminBO) {
-        adminUserService.updateAdmin(newAdminBO.getUsername(),newAdminBO.getFaceId());
+        adminUserService.updateAdmin(newAdminBO.getUsername(), newAdminBO.getFaceId());
         return GraceResult.ok(newAdminBO);
     }
 
+    @Override
+    public GraceResult adminFaceLogin(AdminLoginBO adminLoginBO, HttpServletRequest request, HttpServletResponse response) {
+        // 0.判断用户名和人脸信息不能为空
+        if (StringUtils.isBlank(adminLoginBO.getUsername())) {
+            return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_USERNAME_NULL_ERROR);
+        }
+        //获得前端拍摄的图片转化的Img64
+        String tempFace64 = adminLoginBO.getImg64();
+        if (StringUtils.isBlank(tempFace64)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_FACE_NULL_ERROR);
+        }
+        // 1.从MySQL数据库中根据username查询出faceId
+        AdminUser admin = adminUserService.queryAdminByUsername(adminLoginBO.getUsername());
+        String adminFaceId = admin.getFaceId();
+        System.out.println(adminFaceId);
+        if (StringUtils.isBlank(adminFaceId)) {
+            return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_FACE_LOGIN_ERROR);
+        }
+        // 2.请求文件服务，根据faceId获得人脸数据的base64数据
+        // 根据用户的 faceId 获取MongoDB数据库存储人脸图片生成的base64
+        String fileServerUrl = "http://localhost:8004/fs/readFace64?faceId=" + adminFaceId;
+        //得到的是封装的结果
+        ResponseEntity<GraceResult> responseEntity = restTemplate.getForEntity(fileServerUrl, GraceResult.class);
+        GraceResult bodyResult = responseEntity.getBody();
+        assert bodyResult != null;
+        //获得 MongoDB数据库存储的人脸图片生成的base64
+        String base64 = (String) bodyResult.getData();
+        // 3.调用阿里ai进行人脸对比识别，判断可信度，从而实现人脸登录
+        boolean result = new FaceVerifyUtil().faceVerify(FaceVerifyType.BASE64.type, tempFace64, base64, 60);
+        System.out.println("对比结果："+result);
+        if (!result) {
+            return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_FACE_LOGIN_ERROR);
+        }
+        // 4.admin登录后的数据设置，redis与cookie
+        doLoginSetting(admin, request, response);
+        return GraceResult.ok();
+
+    }
 }
