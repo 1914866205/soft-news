@@ -10,15 +10,21 @@ import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.common.utils.PageGridResult;
 import com.soft1851.pojo.AdminUser;
+import com.sun.corba.se.spi.ior.ObjectId;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 import static com.soft1851.api.interceptors.BaseInterceptor.REDIS_ADMIN_TOKEN;
@@ -124,20 +130,32 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
     }
 
     /**
-     *
-     * @param adminId 管理员id
-     * @param request 请求
+     * @param adminId  管理员id
+     * @param request  请求
      * @param response 响应
      * @return
      */
     @Override
     public GraceResult adminLogout(String adminId, HttpServletRequest request, HttpServletResponse response) {
-       // 1.从redis中删除admin的会话token
+        // 1.从redis中删除admin的会话token
         redis.del(REDIS_ADMIN_TOKEN + ":" + adminId);
         // 2.从cookie中清理admin登录的相关信息
-        deleteCookie(request,response,"aToken");
-        deleteCookie(request,response,"aId");
+        deleteCookie(request, response, "aToken");
+        deleteCookie(request, response, "aId");
         deleteCookie(request, response, "aName");
         return GraceResult.ok();
+    }
+
+    /**
+     *
+     * @param request 请求
+     * @param response 响应
+     * @param newAdminBO 入参
+     * @return
+     */
+    @Override
+    public GraceResult updateAdmin(HttpServletRequest request, HttpServletResponse response, NewAdminBO newAdminBO) {
+        adminUserService.updateAdmin(newAdminBO.getUsername(),newAdminBO.getFaceId());
+        return GraceResult.ok(newAdminBO);
     }
 }

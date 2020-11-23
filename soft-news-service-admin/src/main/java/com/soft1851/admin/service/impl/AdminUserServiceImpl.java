@@ -83,6 +83,13 @@ public class AdminUserServiceImpl implements AdminUserService {
         return setterPagedGrid(adminUserList, page);
     }
 
+    @Override
+    public void updateAdmin(String username, String faceId) {
+        AdminUser adminUser = queryAdminByUsername(username);
+        adminUser.setFaceId(faceId);
+        adminUserMapper.updateByPrimaryKey(adminUser);
+    }
+
     private PageGridResult setterPagedGrid(List<?> adminUserList, Integer page) {
         PageInfo<?> pageList = new PageInfo<>(adminUserList);
         PageGridResult gridResult = new PageGridResult();
