@@ -1,5 +1,6 @@
 package com.soft1851.files.controller;
 
+import com.mongodb.client.gridfs.model.GridFSFile;
 import com.soft1851.api.controller.files.FileUploadControllerApi;
 import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
@@ -11,10 +12,16 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -74,7 +81,7 @@ public class FileUploadController implements FileUploadControllerApi {
                 }
                 // 执行上传服务，得到回调路径
 //                path = uploadService.uploadFdfs(file, suffix);
-                path = uploadService.uploadOSS(file, userId,suffix);
+                path = uploadService.uploadOSS(file, userId, suffix);
             } else {
                 return GraceResult.errorCustom(ResponseStatusEnum.FILE_UPLOAD_NULL_ERROR);
             }
@@ -150,6 +157,7 @@ public class FileUploadController implements FileUploadControllerApi {
 
     /**
      * 阿里云图片智能检测
+     *
      * @param pendingImageUrl 图片路径
      * @return
      */
@@ -166,6 +174,7 @@ public class FileUploadController implements FileUploadControllerApi {
         }
         return pendingImageUrl;
     }
+
     /**
      * @param username      管理员用户名
      * @param multipartFile 人脸照片文件
@@ -193,5 +202,30 @@ public class FileUploadController implements FileUploadControllerApi {
             e.printStackTrace();
         }
         return GraceResult.ok(objectId.toHexString());
+    }
+
+    @Override
+    public GraceResult readInGridFs(String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        GridFSFile gridFSFile = gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(faceId)));
+        if (gridFSFile == null) {
+            throw new RuntimeException("没有这个faceId:" + faceId);
+        }
+        System.out.println(gridFSFile.getFilename());
+        //获取流对象
+        GridFsResource resource = gridFsTemplate.getResource(gridFSFile);
+        InputStream inputStream;
+        String content = null;
+        byte[] bytes = new byte[(int) gridFSFile.getLength()];
+        try {
+            inputStream = resource.getInputStream();
+            inputStream.read(bytes);
+            inputStream.close();
+            ServletOutputStream outputStream = response.getOutputStream();
+            outputStream.write(bytes);
+            outputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return GraceResult.ok(new String(bytes));
     }
 }

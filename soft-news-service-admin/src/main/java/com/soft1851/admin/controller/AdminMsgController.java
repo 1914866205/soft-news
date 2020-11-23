@@ -158,4 +158,5 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         adminUserService.updateAdmin(newAdminBO.getUsername(),newAdminBO.getFaceId());
         return GraceResult.ok(newAdminBO);
     }
+
 }

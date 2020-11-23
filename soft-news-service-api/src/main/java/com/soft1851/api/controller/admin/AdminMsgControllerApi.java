@@ -84,5 +84,6 @@ public interface AdminMsgControllerApi {
     GraceResult updateAdmin(HttpServletRequest request, HttpServletResponse response, @RequestBody NewAdminBO newAdminBO);
 
 
+
 }
 

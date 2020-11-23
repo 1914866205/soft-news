@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0335e5-124c-4dfe-8ee4-ff60bfa57dea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-23.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/controller/AdminMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/controller/AdminMsgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/AdminUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/AdminUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/impl/AdminUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/admin/AdminMsgControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/admin/AdminMsgControllerApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/files/FileUploadControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/files/FileUploadControllerApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/java/com/soft1851/files/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/java/com/soft1851/files/controller/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-22.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-23.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-23.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <command value="mvn verify install:install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.adminApplication">
+  <component name="RunManager" selected="Spring Boot.FileApplication">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.soft1851.admin.Application" />
       <module name="soft-news-service-admin" />
@@ -222,8 +219,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.adminApplication" />
         <item itemvalue="Spring Boot.FileApplication" />
+        <item itemvalue="Spring Boot.adminApplication" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.FastDFSController" />
         <item itemvalue="Spring Boot.UserApplication" />
@@ -276,7 +273,7 @@
       <workItem from="1605764200051" duration="10209000" />
       <workItem from="1605793730478" duration="1967000" />
       <workItem from="1605856295430" duration="18715000" />
-      <workItem from="1605965395302" duration="9231000" />
+      <workItem from="1605965395302" duration="12459000" />
     </task>
     <servers />
   </component>
@@ -319,10 +316,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="660" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605978774915" />
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606104085552">
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606107906030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606104085552" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606107906030" />
     <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605515696844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,38 +340,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="980" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605860703383" />
-    <state width="826" height="319" key="GridCell.Tab.0.bottom" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom" timestamp="1606109368592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.0.center" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606109368592" />
+    <state width="1493" height="319" key="GridCell.Tab.0.center" timestamp="1606109368590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.0.left" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606109368590" />
+    <state width="1493" height="319" key="GridCell.Tab.0.left" timestamp="1606109368589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.0.right" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606109368589" />
+    <state width="1493" height="319" key="GridCell.Tab.0.right" timestamp="1606109368591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.1.bottom" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606109368591" />
+    <state width="1493" height="319" key="GridCell.Tab.1.bottom" timestamp="1606109368592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.1.center" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606109368592" />
+    <state width="1493" height="319" key="GridCell.Tab.1.center" timestamp="1606109368592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.1.left" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606109368592" />
+    <state width="1493" height="319" key="GridCell.Tab.1.left" timestamp="1606109368592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
-    <state width="826" height="319" key="GridCell.Tab.1.right" timestamp="1606106160155">
+    <state width="1493" height="319" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606109368592" />
+    <state width="1493" height="319" key="GridCell.Tab.1.right" timestamp="1606109368592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="826" height="319" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606106160155" />
+    <state width="1493" height="319" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606109368592" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605978666989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

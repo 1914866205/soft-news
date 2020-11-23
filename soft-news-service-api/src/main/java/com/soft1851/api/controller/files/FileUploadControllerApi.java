@@ -3,10 +3,14 @@ package com.soft1851.api.controller.files;
 import com.soft1851.common.result.GraceResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * @author 倪涛涛
@@ -34,14 +38,14 @@ public interface FileUploadControllerApi {
 
     /**
      * 上传多个文件
+     *
      * @param userId 用户id
-     * @param files 文件数组
+     * @param files  文件数组
      * @return 返回
      * @throws Exception 异常
      */
     @PostMapping("/uploadSomeFiles")
     GraceResult uploadSomeFiles(@RequestParam String userId, MultipartFile[] files) throws Exception;
-
 
 
     /**
@@ -54,6 +58,10 @@ public interface FileUploadControllerApi {
     @ApiOperation(value = "管理员人脸入库", notes = "管理员人脸入库", httpMethod = "POST")
     @PostMapping("uploadToGridFs")
     GraceResult uploadToGridFs(@RequestParam String username, @RequestParam(value = "file") MultipartFile multipartFile) throws Exception;
+
+    @ApiOperation(value = "从gridFS中读取文件", notes = "从gridFS中读取文件", httpMethod = "GET")
+    @GetMapping("readInGridFS")
+    GraceResult readInGridFs(@RequestParam String faceId, HttpServletRequest request, HttpServletResponse response) throws Exception;
 
 
 }
