@@ -29,12 +29,14 @@ import java.util.List;
  * @Description TODO
  * @createTime 2020年11月20日 16:42:00
  */
+//@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class AdminUserServiceImpl implements AdminUserService {
 
-    public final AdminUserMapper adminUserMapper;
-    public final Sid sid;
+    @Autowired
+    public AdminUserMapper adminUserMapper;
+    @Autowired
+    public Sid sid;
 
     @Override
     public AdminUser queryAdminByUsername(String username) {
@@ -56,7 +58,6 @@ public class AdminUserServiceImpl implements AdminUserService {
         //如果密码不为空，则需要加密密码，然后存入数据库
         if (StringUtils.isNotBlank(newAdminBO.getPassword())) {
             String pwd = BCrypt.hashpw(newAdminBO.getPassword(), BCrypt.gensalt());
-            System.out.println("pwd" + pwd);
             adminUser.setPassword(pwd);
         }
         // 如果人脸上传以后，则有faceId,需要和admin信息关联存储入库

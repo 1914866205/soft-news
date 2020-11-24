@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0335e5-124c-4dfe-8ee4-ff60bfa57dea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FaceVerifyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FaceVerifyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-24.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FaceVerifyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FaceVerifyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-common/src/main/resources/aliyun.properties" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/src/main/resources/aliyun.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/bo/AdminLoginBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/bo/AdminLoginBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/bo/NewAdminBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/bo/NewAdminBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/controller/AdminMsgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/controller/AdminMsgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/admin/AdminMsgControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/admin/AdminMsgControllerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/files/FileUploadControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/files/FileUploadControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/impl/AdminUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/impl/AdminUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/interceptors/UserTokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/interceptors/UserTokenInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/java/com/soft1851/files/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/java/com/soft1851/files/controller/FileUploadController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-23.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/PassportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/PassportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-23.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-23.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +64,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,11 +110,11 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -179,7 +187,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.files.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,7 +216,8 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.soft1851.admin.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -271,7 +281,9 @@
       <workItem from="1605793730478" duration="1967000" />
       <workItem from="1605856295430" duration="18715000" />
       <workItem from="1605965395302" duration="13213000" />
-      <workItem from="1606133667560" duration="4867000" />
+      <workItem from="1606133667560" duration="9961000" />
+      <workItem from="1606176010460" duration="1157000" />
+      <workItem from="1606177211112" duration="3100000" />
     </task>
     <servers />
   </component>
@@ -310,14 +322,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="73" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605864150378" />
-    <state x="660" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605978774915">
+    <state x="447" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606177115436">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="660" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605978774915" />
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606136363905">
+    <state x="447" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606177115436" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606178290498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606136363905" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606178290498" />
     <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605515696844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -338,38 +350,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="980" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605860703383" />
-    <state width="1493" height="322" key="GridCell.Tab.0.bottom" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.0.center" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.0.left" timestamp="1606138598184">
+    <state width="1493" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606138598184" />
-    <state width="1493" height="322" key="GridCell.Tab.0.right" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.1.bottom" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.1.bottom" timestamp="1606180386711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.1.center" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606180386711" />
+    <state width="1493" height="225" key="GridCell.Tab.1.center" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.1.left" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.1.left" timestamp="1606180386710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
-    <state width="1493" height="322" key="GridCell.Tab.1.right" timestamp="1606138598185">
+    <state width="1493" height="225" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606180386710" />
+    <state width="1493" height="225" key="GridCell.Tab.1.right" timestamp="1606180386711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="322" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606138598185" />
+    <state width="1493" height="225" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606180386711" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605978666989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -378,10 +390,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="598" y="89" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605795699186" />
-    <state x="498" y="0" key="SettingsEditor" timestamp="1605579354678">
+    <state x="498" y="0" key="SettingsEditor" timestamp="1606177361073">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605579354678" />
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606177361073" />
     <state width="498" height="519" key="SwitcherDM" timestamp="1605596775689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

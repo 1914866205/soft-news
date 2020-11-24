@@ -214,3 +214,123 @@
 2020-11-23 21:31:16.030 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-23 21:31:16.179 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
 2020-11-23 21:31:16.194 [main] INFO  com.soft1851.files.Application - Started Application in 12.423 seconds (JVM running for 14.513)
+2020-11-23 21:50:00.667 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 21:50:00.667 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 21:50:00.677 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-23 21:50:00.939 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:134}] to 120.26.177.51:27017
+2020-11-23 22:26:56.934 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-23 22:26:57.535 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-23 22:26:58.933 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-23 22:27:00.300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 22:27:00.301 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-23 22:27:00.330 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 MongoDB repository interfaces.
+2020-11-23 22:27:00.344 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 22:27:00.345 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-23 22:27:00.361 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2020-11-23 22:27:00.619 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-23 22:27:01.134 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-23 22:27:01.147 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-23 22:27:01.148 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-23 22:27:01.148 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-23 22:27:01.337 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-23 22:27:01.337 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2385 ms
+2020-11-23 22:27:02.612 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-23 22:27:02.771 [cluster-ClusterId{value='5fbbc6b6cde5b7110107c79d', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:135}] to 120.26.177.51:27017
+2020-11-23 22:27:02.797 [cluster-ClusterId{value='5fbbc6b6cde5b7110107c79d', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22328300}
+2020-11-23 22:27:02.867 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 22:27:02.908 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 22:27:03.705 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 22:27:03.705 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 22:27:03.715 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 22:27:03.715 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 22:27:03.887 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-23 22:27:05.688 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-23 22:27:05.715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-23 22:27:06.948 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-23 22:27:06.961 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-23 22:27:06.970 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-23 22:27:07.109 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-23 22:27:07.126 [main] INFO  com.soft1851.files.Application - Started Application in 12.014 seconds (JVM running for 13.974)
+2020-11-23 22:27:22.479 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 22:27:22.479 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 22:27:22.487 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-23 22:27:22.865 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:136}] to 120.26.177.51:27017
+2020-11-23 22:34:26.243 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-23 22:34:26.876 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-23 22:34:28.358 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-23 22:34:29.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 22:34:29.541 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-23 22:34:29.571 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 MongoDB repository interfaces.
+2020-11-23 22:34:29.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 22:34:29.591 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-23 22:34:29.610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-11-23 22:34:29.875 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-23 22:34:30.446 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-23 22:34:30.459 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-23 22:34:30.459 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-23 22:34:30.459 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-23 22:34:30.658 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-23 22:34:30.659 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2283 ms
+2020-11-23 22:34:31.983 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-23 22:34:32.140 [cluster-ClusterId{value='5fbbc8772a90623753fb1112', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:137}] to 120.26.177.51:27017
+2020-11-23 22:34:32.170 [cluster-ClusterId{value='5fbbc8772a90623753fb1112', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25672900}
+2020-11-23 22:34:32.206 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 22:34:32.252 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 22:34:33.209 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 22:34:33.209 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 22:34:33.215 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 22:34:33.215 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 22:34:33.425 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-23 22:34:35.253 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-23 22:34:35.284 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-23 22:34:36.532 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-23 22:34:36.548 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-23 22:34:36.557 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-23 22:34:36.705 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-23 22:34:36.719 [main] INFO  com.soft1851.files.Application - Started Application in 12.54 seconds (JVM running for 14.548)
+2020-11-23 22:35:03.420 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 22:35:03.429 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 22:35:03.437 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-11-23 22:35:03.712 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:138}] to 120.26.177.51:27017
+2020-11-23 22:49:45.367 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-23 22:49:46.056 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：689
+2020-11-23 22:49:46.056 [http-nio-8004-exec-9] INFO  c.s.f.c.FileUploadController - path=FastDFS/201123H85RN98SFW.jpg
+2020-11-23 22:49:46.056 [http-nio-8004-exec-9] INFO  c.s.f.c.FileUploadController - finalPath=https://nttbucket.oss-cn-beijing.aliyuncs.com/FastDFS/201123H85RN98SFW.jpg
+2020-11-23 22:49:46.056 [http-nio-8004-exec-9] INFO  c.s.f.c.FileUploadController - https://nttbucket.oss-cn-beijing.aliyuncs.com/FastDFS/201123H85RN98SFW.jpg
+2020-11-23 23:06:15.044 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-23 23:06:15.647 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-23 23:06:17.091 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-23 23:06:18.249 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 23:06:18.250 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-23 23:06:18.276 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 MongoDB repository interfaces.
+2020-11-23 23:06:18.292 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-23 23:06:18.293 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-23 23:06:18.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+2020-11-23 23:06:18.555 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-23 23:06:19.101 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-23 23:06:19.114 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-23 23:06:19.114 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-23 23:06:19.114 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-23 23:06:19.318 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-23 23:06:19.318 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2207 ms
+2020-11-23 23:06:20.511 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-23 23:06:20.652 [cluster-ClusterId{value='5fbbcfec5e9eb64d433533fc', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:142}] to 120.26.177.51:27017
+2020-11-23 23:06:20.687 [cluster-ClusterId{value='5fbbcfec5e9eb64d433533fc', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30304700}
+2020-11-23 23:06:20.714 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 23:06:20.758 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-23 23:06:21.607 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 23:06:21.607 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 23:06:21.612 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-23 23:06:21.613 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 23:06:21.779 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-23 23:06:23.618 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-23 23:06:23.651 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-23 23:06:25.076 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-23 23:06:25.094 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-23 23:06:25.104 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-23 23:06:25.328 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-23 23:06:25.343 [main] INFO  com.soft1851.files.Application - Started Application in 12.177 seconds (JVM running for 14.105)
+2020-11-23 23:06:28.372 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 23:06:28.372 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-23 23:06:28.379 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-11-23 23:06:28.659 [http-nio-8004-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:143}] to 120.26.177.51:27017

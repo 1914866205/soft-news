@@ -12,25 +12,15 @@ import com.soft1851.common.utils.FaceVerifyType;
 import com.soft1851.common.utils.FaceVerifyUtil;
 import com.soft1851.common.utils.PageGridResult;
 import com.soft1851.pojo.AdminUser;
-import com.sun.corba.se.spi.ior.ObjectId;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.UUID;
 
 import static com.soft1851.api.interceptors.BaseInterceptor.REDIS_ADMIN_TOKEN;
@@ -49,6 +39,8 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
     private AdminUserService adminUserService;
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private FaceVerifyUtil faceVerifyUtil;
 
 
     @Override
@@ -180,6 +172,7 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         }
         // 1.从MySQL数据库中根据username查询出faceId
         AdminUser admin = adminUserService.queryAdminByUsername(adminLoginBO.getUsername());
+        System.out.println("admin" + admin);
         String adminFaceId = admin.getFaceId();
         System.out.println(adminFaceId);
         if (StringUtils.isBlank(adminFaceId)) {
@@ -195,14 +188,13 @@ public class AdminMsgController extends BaseController implements AdminMsgContro
         //获得 MongoDB数据库存储的人脸图片生成的base64
         String base64 = (String) bodyResult.getData();
         // 3.调用阿里ai进行人脸对比识别，判断可信度，从而实现人脸登录
-        boolean result = new FaceVerifyUtil().faceVerify(FaceVerifyType.BASE64.type, tempFace64, base64, 60);
-        System.out.println("对比结果："+result);
+        boolean result = faceVerifyUtil.faceVerify(FaceVerifyType.BASE64.type, tempFace64, base64, 60);
+        System.out.println("对比结果：" + result);
         if (!result) {
             return GraceResult.errorCustom(ResponseStatusEnum.ADMIN_FACE_LOGIN_ERROR);
         }
         // 4.admin登录后的数据设置，redis与cookie
         doLoginSetting(admin, request, response);
         return GraceResult.ok();
-
     }
 }

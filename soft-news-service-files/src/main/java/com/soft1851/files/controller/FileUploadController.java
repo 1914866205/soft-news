@@ -245,6 +245,7 @@ public class FileUploadController implements FileUploadControllerApi {
     }
 
     private File readFileFromGridFs(String faceId) throws Exception {
+        System.out.println("readFileFromGridFs接收的faceid"+faceId);
         GridFSFindIterable files = gridFSBucket.find(Filters.eq("_id", new ObjectId(faceId)));
         GridFSFile gridFSFile = files.first();
         if (gridFSFile == null) {

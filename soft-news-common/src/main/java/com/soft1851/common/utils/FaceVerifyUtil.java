@@ -83,7 +83,8 @@ public class FaceVerifyUtil {
     }
 
     /**
-     *  等同于javaScript中的 new Date().toUTCString();
+     * 等同于javaScript中的 new Date().toUTCString();
+     *
      * @param date 入参
      * @return String
      */
@@ -200,15 +201,12 @@ public class FaceVerifyUtil {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         Map<String, String> map = JsonUtil.jsonToPojo(response, Map.class);
         Object confidenceStr = map.get("confidence");
         Double responseConfidence = (Double) confidenceStr;
 
         logger.info("人脸对比结果：{}", responseConfidence);
 
-//        System.out.println(response.toString());
-//        System.out.println(map.toString());
 
         if (responseConfidence > targetConfidence) {
             return true;
