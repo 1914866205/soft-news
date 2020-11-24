@@ -31,18 +31,19 @@ public class Swaggers {
         Predicate<RequestHandler> adminPredicate = RequestHandlerSelectors.basePackage("com.soft1851.admin.controller");
         Predicate<RequestHandler> userPredicate = RequestHandlerSelectors.basePackage("com.soft1851.user.controller");
         Predicate<RequestHandler> filesPredicate = RequestHandlerSelectors.basePackage("com.soft1851.files.controller");
+        Predicate<RequestHandler> articlePredicate = RequestHandlerSelectors.basePackage("com.soft1851.article.controller");
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(Predicates.or(userPredicate, adminPredicate, filesPredicate))
+                .apis(Predicates.or(userPredicate, adminPredicate, filesPredicate, articlePredicate))
                 .paths(PathSelectors.any())
                 .build();
     }
 
-    private ApiInfo apiInfo(){
+    private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("新闻丶自媒体接口api")
-                .contact(new Contact("taotao", "http://www.qq.com","1914866205@qq.com"))
+                .contact(new Contact("taotao", "http://www.qq.com", "1914866205@qq.com"))
                 .description("1.0.1")
                 .termsOfServiceUrl("https://www.taotao.com")
                 .build();
