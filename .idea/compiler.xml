@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="soft-news-service-user" />
+        <module name="soft-news-service-article" />
         <module name="mybatis-generator-database" />
         <module name="soft-news-model" />
         <module name="soft-news-service-files" />
@@ -23,6 +24,7 @@
       <module name="soft-news-model" options="-parameters" />
       <module name="soft-news-service-admin" options="-parameters" />
       <module name="soft-news-service-api" options="-parameters" />
+      <module name="soft-news-service-article" options="-parameters" />
       <module name="soft-news-service-files" options="-parameters" />
       <module name="soft-news-service-user" options="-parameters" />
     </option>

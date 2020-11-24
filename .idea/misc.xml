@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-generator-database/pom.xml" />
         <option value="$PROJECT_DIR$/soft-news-service-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/soft-news-service-article/pom.xml" />
       </list>
     </option>
   </component>
