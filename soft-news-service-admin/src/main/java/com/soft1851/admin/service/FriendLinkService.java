@@ -22,7 +22,14 @@ public interface FriendLinkService {
 
     /**
      * 查询友情连接
+     *
      * @return
      */
     List<FriendLinkMO> queryAllFriendList();
+
+
+    /**
+     * 删除友情链接
+     */
+    void delete(String linkId);
 }

@@ -25,8 +25,14 @@ public class FriendLinkServiceImpl implements FriendLinkService {
     public void saveOrUpdateFriendLink(FriendLinkMO friendLinkMO) {
         friendLinkRepository.save(friendLinkMO);
     }
+
     @Override
     public List<FriendLinkMO> queryAllFriendList() {
         return friendLinkRepository.findAll();
+    }
+
+    @Override
+    public void delete(String linkId) {
+        friendLinkRepository.deleteById(linkId);
     }
 }
