@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0335e5-124c-4dfe-8ee4-ff60bfa57dea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/utils/UrlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/bo/SaveFriendLinkBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/mo/FriendLinkMO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/validate/CheckUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/validate/CheckUrlValidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/controller/FriendLinkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/repository/FriendLinkRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/FriendLinkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-admin/src/main/java/com/soft1851/admin/service/impl/FriendLinkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/admin/FriendLinkControllerApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/期末复习" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-common/src/main/resources/aliyun.properties" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/src/main/resources/aliyun.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-files/src/main/resources/log/service-user.2020-11-24.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-model/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-24.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-24.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,20 +109,23 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-admin\src\main\resources\mapper" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-admin\src\main\resources" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-files\src\main\resources" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-user\src\main\resources\mapper" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-user\src\main\java\com\soft1851\user\mapper" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\utils" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\utils\extend" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\enums" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\exception" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.soft1851.common.validate" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.soft1851.admin.mapper" />
@@ -120,12 +134,12 @@
       <recent name="com.soft1851.api.controller.my.mapper" />
       <recent name="com.soft1851.my.mapper" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\utils" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\utils\extend" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\enums" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\" />
-      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-common\src\main\java\com\soft1851\common\exception" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-admin\src\main\resources\mapper" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-admin\src\main\resources" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-files\src\main\resources" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-user\src\main\resources\mapper" />
+      <recent name="D:\CompcuteApplication\projectTest\SpringStudy\soft-news\soft-news-service-user\src\main\java\com\soft1851\user\mapper" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -273,7 +287,9 @@
       <workItem from="1606176010460" duration="1157000" />
       <workItem from="1606177211112" duration="3100000" />
       <workItem from="1606182266577" duration="480000" />
-      <workItem from="1606182782142" duration="17000" />
+      <workItem from="1606182782142" duration="66000" />
+      <workItem from="1606185168649" duration="7139000" />
+      <workItem from="1606199214858" duration="242000" />
     </task>
     <servers />
   </component>
@@ -316,18 +332,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606177115436" />
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606178290498">
+    <state x="510" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606185204122">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606178290498" />
-    <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605515696844">
+    <state x="510" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606185204122" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606198495404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1605515696844" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606198495404" />
+    <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606197821068">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1606197821068" />
     <state x="961" y="274" width="575" height="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605669469327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="961" y="274" width="575" height="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605669469327" />
+    <state x="285" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606198457751">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="285" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1606198457751" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1605858880207">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,38 +364,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="980" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605860703383" />
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom" timestamp="1606182749721">
+    <state width="1493" height="353" key="GridCell.Tab.0.bottom" timestamp="1606199501458">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606182749721" />
-    <state width="1493" height="225" key="GridCell.Tab.0.center" timestamp="1606182749721">
+    <state width="1493" height="353" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606199501458" />
+    <state width="1493" height="353" key="GridCell.Tab.0.center" timestamp="1606199501457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606182749721" />
-    <state width="1493" height="225" key="GridCell.Tab.0.left" timestamp="1606182749721">
+    <state width="1493" height="353" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606199501457" />
+    <state width="1493" height="353" key="GridCell.Tab.0.left" timestamp="1606199501457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606182749721" />
-    <state width="1493" height="225" key="GridCell.Tab.0.right" timestamp="1606182749721">
+    <state width="1493" height="353" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606199501457" />
+    <state width="1493" height="353" key="GridCell.Tab.0.right" timestamp="1606199501457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606182749721" />
-    <state width="1493" height="225" key="GridCell.Tab.1.bottom" timestamp="1606182749708">
+    <state width="1493" height="353" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606199501457" />
+    <state width="1493" height="349" key="GridCell.Tab.1.bottom" timestamp="1606199195413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606182749708" />
-    <state width="1493" height="225" key="GridCell.Tab.1.center" timestamp="1606182749707">
+    <state width="1493" height="349" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606199195413" />
+    <state width="1493" height="349" key="GridCell.Tab.1.center" timestamp="1606199195413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606182749707" />
-    <state width="1493" height="225" key="GridCell.Tab.1.left" timestamp="1606182749707">
+    <state width="1493" height="349" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606199195413" />
+    <state width="1493" height="349" key="GridCell.Tab.1.left" timestamp="1606199195413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606182749707" />
-    <state width="1493" height="225" key="GridCell.Tab.1.right" timestamp="1606182749707">
+    <state width="1493" height="349" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606199195413" />
+    <state width="1493" height="349" key="GridCell.Tab.1.right" timestamp="1606199195413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="225" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606182749707" />
+    <state width="1493" height="349" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606199195413" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605978666989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -380,10 +404,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="598" y="89" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605795699186" />
-    <state x="498" y="0" key="SettingsEditor" timestamp="1606177361073">
+    <state x="498" y="0" key="SettingsEditor" timestamp="1606199461071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606177361073" />
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606199461071" />
     <state width="498" height="519" key="SwitcherDM" timestamp="1605596775689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -416,9 +440,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="426" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1605857027449" />
-    <state x="430" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1606134091838">
+    <state x="430" y="146" width="672" height="678" key="search.everywhere.popup" timestamp="1606197792925">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="430" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606134091838" />
+    <state x="430" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606197792925" />
   </component>
 </project>
