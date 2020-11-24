@@ -14,6 +14,7 @@
         <module>soft-news-service-user</module>
         <module>soft-news-service-files</module>
         <module>soft-news-service-admin</module>
+        <module>soft-news-service-article</module>
     </modules>
     <packaging>pom</packaging>
     <!--

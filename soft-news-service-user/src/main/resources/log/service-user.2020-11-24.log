@@ -1416,3 +1416,9 @@ com.soft1851.admin.controller.FriendLinkController#delete(String) mapped.
 2020-11-24 14:55:10.521 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-24 14:55:10.530 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-24 14:55:10.688 [main] INFO  com.soft1851.admin.Application - Started Application in 9.396 seconds (JVM running for 10.99)
+2020-11-24 14:55:24.353 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 14:55:24.353 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-24 14:55:24.363 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-11-24 14:55:33.242 [http-nio-8005-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.admin.service.impl.FriendLinkServiceImpl.delete====
+2020-11-24 14:55:33.755 [http-nio-8005-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:203}] to 120.26.177.51:27017
+2020-11-24 14:55:33.822 [http-nio-8005-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：580
