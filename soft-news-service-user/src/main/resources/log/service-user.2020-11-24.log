@@ -1090,3 +1090,11 @@ java.lang.NullPointerException: null
 2020-11-24 14:31:52.694 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
 2020-11-24 14:31:52.702 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-24 14:31:52.844 [main] INFO  com.soft1851.admin.Application - Started Application in 9.755 seconds (JVM running for 11.434)
+2020-11-24 14:32:03.099 [http-nio-8005-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 14:32:03.099 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-24 14:32:03.110 [http-nio-8005-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-11-24 14:32:29.351 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.admin.service.impl.FriendLinkServiceImpl.saveOrUpdateFriendLink====
+2020-11-24 14:32:29.761 [http-nio-8005-exec-5] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:194}] to 120.26.177.51:27017
+2020-11-24 14:32:30.028 [http-nio-8005-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：677
+2020-11-24 14:38:59.349 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-24 14:38:59.759 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath

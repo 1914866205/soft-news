@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -42,5 +43,11 @@ public class FriendLinkController extends BaseController implements FriendLinkCo
         saveFriendLinkMO.setUpdateTime(new Date());
         friendLinkService.saveOrUpdateFriendLink(saveFriendLinkMO);
         return GraceResult.ok();
+    }
+
+    @Override
+    public GraceResult getFriendLinkList() {
+        List<FriendLinkMO> list = friendLinkService.queryAllFriendList();
+        return GraceResult.ok(list);
     }
 }
