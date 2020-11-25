@@ -33,4 +33,18 @@ public interface ArticleService {
      */
     void updateAppointToPublish();
 
+    /**
+     * 删除文章
+     * @param userId 用户id
+     * @param articleId 文章id
+     */
+    void deleteArticle(String userId, String articleId);
+
+
+    /**
+     * 撤回文章
+     * @param userId 用户id
+     * @param articleId 文章id
+     */
+    void withdrawArticle(String userId, String articleId);
 }

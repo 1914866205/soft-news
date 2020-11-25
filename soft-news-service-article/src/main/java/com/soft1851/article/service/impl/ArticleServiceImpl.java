@@ -78,17 +78,17 @@ public class ArticleServiceImpl implements ArticleService {
         }
         //后续通过阿里智能AI实现对文章文本的自动检测，自动审核
         //通过阿里智能AI实现对文章文本的字段检测
-        System.out.println("newArticleBO.getTitle() + newArticleBO.getContent()"+newArticleBO.getTitle() + newArticleBO.getContent());
+        System.out.println("newArticleBO.getTitle() + newArticleBO.getContent()" + newArticleBO.getTitle() + newArticleBO.getContent());
         String reviewResult = aliTextReviewUtil.reviewTextContent(newArticleBO.getTitle() + newArticleBO.getContent());
         log.info("审核结果" + reviewResult);
         if (ArticleReviewLevel.PASS.type.equalsIgnoreCase(reviewResult)) {
             log.info("审核通过");
             //修改文章状态为：审核通过
-            this.updateArticleStatus(articleId,ArticleReviewStatus.SUCCESS.type);
+            this.updateArticleStatus(articleId, ArticleReviewStatus.SUCCESS.type);
         } else if (ArticleReviewLevel.REVIEW.type.equalsIgnoreCase(reviewResult)) {
             log.info("需要人工复查");
             //修改文章状态为：需要人工复查
-            this.updateArticleStatus(articleId,ArticleReviewStatus.WAITING_MANUAL.type);
+            this.updateArticleStatus(articleId, ArticleReviewStatus.WAITING_MANUAL.type);
         } else if (ArticleReviewLevel.BLOCK.type.equalsIgnoreCase(reviewResult)) {
             log.info("审核不通过");
             //修改文章状态为审核不通过
@@ -117,5 +117,37 @@ public class ArticleServiceImpl implements ArticleService {
         if (res != 1) {
             GraceException.display(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
         }
+    }
+
+    @Transactional(rollbackFor = {Exception.class})
+    @Override
+    public void deleteArticle(String userId, String articleId) {
+        Example articleExample = makeExampleCriteria(userId, articleId);
+        Article pending = new Article();
+        pending.setIsDelete(YesOrNo.YES.type);
+
+        int result = articleMapper.updateByExampleSelective(pending, articleExample);
+        if (result != 1) {
+            GraceException.display(ResponseStatusEnum.ARTICLE_DELETE_ERROR);
+        }
+    }
+
+    @Override
+    public void withdrawArticle(String userId, String articleId) {
+        Example articleExample = makeExampleCriteria(userId, articleId);
+        Article pending = new Article();
+        pending.setIsDelete(ArticleReviewStatus.WAITING_MANUAL.type);
+        int result = articleMapper.updateByExampleSelective(pending, articleExample);
+        if (result != 1) {
+            GraceException.display(ResponseStatusEnum.ARTICLE_WITHDRAW_ERROR);
+        }
+    }
+
+    private Example makeExampleCriteria(String userId, String articleId) {
+        Example articleExample = new Example(Article.class);
+        Example.Criteria criteria = articleExample.createCriteria();
+        criteria.andEqualTo("publishUserId", userId);
+        criteria.andEqualTo("id", articleId);
+        return articleExample;
     }
 }

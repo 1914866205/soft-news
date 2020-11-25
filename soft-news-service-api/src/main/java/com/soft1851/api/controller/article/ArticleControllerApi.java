@@ -24,8 +24,9 @@ import javax.validation.Valid;
 public interface ArticleControllerApi {
     /**
      * 用户发文章
+     *
      * @param newArticleBO 文章BO类
-     * @param result 校验结果
+     * @param result       校验结果
      * @return
      */
     @ApiOperation(value = "用户发文", notes = "用户发文", httpMethod = "POST")
@@ -34,6 +35,7 @@ public interface ArticleControllerApi {
 
     /**
      * 管理员审核文章
+     *
      * @param articleId
      * @param passOrNot
      * @return
@@ -41,5 +43,27 @@ public interface ArticleControllerApi {
     @PostMapping("/doReview")
     @ApiOperation(value = "管理员审核文章", notes = "管理员审核文章", httpMethod = "POST")
     GraceResult doReview(@RequestParam String articleId, @RequestParam Integer passOrNot);
+
+
+    /**
+     * 用户撤回文章
+     * @param userId
+     * @param articleId
+     * @return
+     */
+    @PostMapping("/withdraw")
+    @ApiOperation(value = "用户撤回文章", notes = "用户撤回文章", httpMethod = "POST")
+    GraceResult withdraw(@RequestParam String userId, @RequestParam String articleId);
+
+    /**
+     * 用户删除文章
+     * @param userId
+     * @param articleId
+     * @return
+     */
+    @PostMapping("/delete")
+    @ApiOperation(value = "用户删除文章", notes = "用户删除文章", httpMethod = "POST")
+    GraceResult delete(@RequestParam String userId, @RequestParam String articleId);
+
 
 }

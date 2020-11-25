@@ -33,9 +33,8 @@ public class ArticleController extends BaseController implements ArticleControll
     private final ArticleService articleService;
 
     /**
-     *
      * @param newArticleBO 文章BO类
-     * @param result 校验结果
+     * @param result       校验结果
      * @return
      */
     @Override
@@ -83,7 +82,19 @@ public class ArticleController extends BaseController implements ArticleControll
             return GraceResult.errorCustom(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
         }
 
-        articleService.updateArticleStatus(articleId,pendingStatus);
+        articleService.updateArticleStatus(articleId, pendingStatus);
+        return GraceResult.ok();
+    }
+
+    @Override
+    public GraceResult withdraw(String userId, String articleId) {
+        articleService.withdrawArticle(userId, articleId);
+        return GraceResult.ok();
+    }
+
+    @Override
+    public GraceResult delete(String userId, String articleId) {
+        articleService.deleteArticle(userId, articleId);
         return GraceResult.ok();
     }
 }
