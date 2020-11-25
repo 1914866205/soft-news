@@ -8,6 +8,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
 
@@ -31,5 +32,14 @@ public interface ArticleControllerApi {
     @PostMapping("createArticle")
     GraceResult createArticle(@RequestBody @Valid NewArticleBO newArticleBO, BindingResult result);
 
+    /**
+     * 管理员审核文章
+     * @param articleId
+     * @param passOrNot
+     * @return
+     */
+    @PostMapping("/doReview")
+    @ApiOperation(value = "管理员审核文章", notes = "管理员审核文章", httpMethod = "POST")
+    GraceResult doReview(@RequestParam String articleId, @RequestParam Integer passOrNot);
 
 }

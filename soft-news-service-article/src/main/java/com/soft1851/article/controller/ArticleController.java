@@ -4,6 +4,8 @@ import com.soft1851.api.BaseController;
 import com.soft1851.api.controller.article.ArticleControllerApi;
 import com.soft1851.article.service.ArticleService;
 import com.soft1851.bo.NewArticleBO;
+import com.soft1851.common.enums.ArticleReviewStatus;
+import com.soft1851.common.enums.YesOrNo;
 import com.soft1851.common.result.GraceResult;
 import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.common.utils.JsonUtil;
@@ -66,6 +68,22 @@ public class ArticleController extends BaseController implements ArticleControll
         }
         System.out.println(newArticleBO.toString());
         articleService.createArticle(newArticleBO, temp);
+        return GraceResult.ok();
+    }
+
+
+    @Override
+    public GraceResult doReview(String articleId, Integer passOrNot) {
+        Integer pendingStatus;
+        if (passOrNot == YesOrNo.YES.type) {
+            pendingStatus = ArticleReviewStatus.SUCCESS.type;
+        } else if (YesOrNo.NO.type.equals(passOrNot)) {
+            pendingStatus = ArticleReviewStatus.FAILED.type;
+        } else {
+            return GraceResult.errorCustom(ResponseStatusEnum.ARTICLE_REVIEW_ERROR);
+        }
+
+        articleService.updateArticleStatus(articleId,pendingStatus);
         return GraceResult.ok();
     }
 }
