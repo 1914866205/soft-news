@@ -807,3 +807,12 @@ com.aliyun.oss.OSSException: 返回结果无效，无法解析。
 2020-11-25 13:32:57.605 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
 2020-11-25 13:32:58.011 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
 2020-11-25 13:32:58.061 [main] INFO  com.soft1851.files.Application - Started Application in 13.918 seconds (JVM running for 15.92)
+2020-11-25 13:35:18.064 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 13:35:18.065 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 13:35:18.085 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2020-11-25 13:35:18.338 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:35:19.511 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1172
+2020-11-25 13:53:25.752 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:53:26.046 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：293
+2020-11-25 13:54:05.451 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:54:05.606 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：155
