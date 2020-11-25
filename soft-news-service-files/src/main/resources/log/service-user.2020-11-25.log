@@ -816,3 +816,27 @@ com.aliyun.oss.OSSException: 返回结果无效，无法解析。
 2020-11-25 13:53:26.046 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：293
 2020-11-25 13:54:05.451 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
 2020-11-25 13:54:05.606 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：155
+2020-11-25 14:39:15.012 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 14:39:15.240 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：226
+2020-11-25 14:42:14.321 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 14:42:15.032 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：711
+2020-11-25 14:42:27.464 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 14:42:27.725 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：261
+2020-11-25 15:17:33.196 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 15:17:33.507 [http-nio-8004-exec-7] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：311
+2020-11-25 15:20:10.038 [http-nio-8004-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 15:20:10.284 [http-nio-8004-exec-10] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：246
+2020-11-25 15:21:44.892 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 15:21:45.239 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：347
+2020-11-25 15:49:07.412 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 15:49:07.934 [http-nio-8004-exec-8] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：522
+2020-11-25 15:49:41.629 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 15:49:42.190 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：561
+2020-11-25 16:05:16.229 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 16:05:16.493 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：264
+2020-11-25 16:05:56.473 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 16:05:56.994 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：521
+2020-11-25 16:06:18.295 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 16:06:18.499 [http-nio-8004-exec-5] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：204
+2020-11-25 16:07:09.060 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 16:07:09.243 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：182
