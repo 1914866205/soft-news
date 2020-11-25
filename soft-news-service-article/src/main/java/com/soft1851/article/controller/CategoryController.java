@@ -38,8 +38,6 @@ public class CategoryController extends BaseController implements CategoryContro
             categoryList = categoryService.selectAll();
             //存入redis
             redis.set(REDIS_ALL_CATEGORY, JsonUtil.objectToJson(categoryList));
-            allCategoryJson = redis.get(REDIS_ALL_CATEGORY);
-            categoryList = JsonUtil.jsonToList(allCategoryJson, Category.class);
         } else {
             // 否则,redis有数据，则直接转化为list返回，保证减少数据库压力
             categoryList = JsonUtil.jsonToList(allCategoryJson, Category.class);

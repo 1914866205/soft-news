@@ -37,8 +37,8 @@ public class NewArticleBO {
     private String articleCover;
 
     @NotNull(message = "文章发布类型不正确")
-    @Min(value = 0, message = "文章发布类型不正确")
-    @Max(value = 1, message = "文章发布类型不正确")
+//    @Min(value = 0, message = "文章发布类型不正确")
+//    @Max(value = 1, message = "文章发布类型不正确")
     private Integer isAppoint;
 
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")

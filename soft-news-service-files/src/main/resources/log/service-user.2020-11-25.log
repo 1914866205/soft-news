@@ -1,0 +1,809 @@
+2020-11-25 11:30:52.707 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 11:30:53.378 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 11:30:55.362 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-25 11:30:56.512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:30:56.514 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 11:30:56.533 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-25 11:30:56.545 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 11:30:56.546 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 11:30:56.559 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2020-11-25 11:30:56.835 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-25 11:30:57.445 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-25 11:30:57.459 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-25 11:30:57.460 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 11:30:57.460 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-25 11:30:57.691 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 11:30:57.691 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2291 ms
+2020-11-25 11:30:59.002 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 11:30:59.158 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:30:59.213 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 11:30:59.359 [cluster-ClusterId{value='5fbdcff2c05d90256722f2c1', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:234}] to 120.26.177.51:27017
+2020-11-25 11:30:59.462 [cluster-ClusterId{value='5fbdcff2c05d90256722f2c1', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=98539500}
+2020-11-25 11:31:00.081 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:31:00.081 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:31:00.086 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 11:31:00.086 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 11:31:00.287 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 11:31:02.814 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-25 11:31:02.856 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-25 11:31:04.450 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 11:31:04.460 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 11:31:04.469 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 11:31:04.581 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-25 11:31:04.593 [main] INFO  com.soft1851.files.Application - Started Application in 13.837 seconds (JVM running for 16.097)
+2020-11-25 11:32:19.614 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 11:32:19.614 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 11:32:19.621 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-11-25 11:32:19.729 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:32:20.801 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：1071
+2020-11-25 11:33:22.539 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 11:33:22.706 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：166
+2020-11-25 13:26:03.985 [cluster-ClusterId{value='5fbdcff2c05d90256722f2c1', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 120.26.177.51:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:131)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-25 13:27:45.628 [http-nio-8004-exec-6] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:27:45.937 [http-nio-8004-exec-6] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+2020-11-25 13:27:45.968 [http-nio-8004-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+] with root cause
+com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:110)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:92)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:81)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:72)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:535)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:519)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:513)
+	at com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS(UploadServiceImpl.java:62)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$FastClassBySpringCGLIB$$1e5446a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$EnhancerBySpringCGLIB$$4918ba39.uploadOSS(<generated>)
+	at com.soft1851.files.controller.FileUploadController.uploadSomeFiles(FileUploadController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-25 13:27:47.013 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:27:47.053 [http-nio-8004-exec-3] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+2020-11-25 13:27:47.061 [http-nio-8004-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+] with root cause
+com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:110)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:92)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:81)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:72)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:535)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:519)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:513)
+	at com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS(UploadServiceImpl.java:62)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$FastClassBySpringCGLIB$$1e5446a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$EnhancerBySpringCGLIB$$4918ba39.uploadOSS(<generated>)
+	at com.soft1851.files.controller.FileUploadController.uploadSomeFiles(FileUploadController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-25 13:28:00.781 [http-nio-8004-exec-4] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:28:00.815 [http-nio-8004-exec-4] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+2020-11-25 13:28:00.817 [http-nio-8004-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+] with root cause
+com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:110)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:92)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:81)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:72)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:535)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:519)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:513)
+	at com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS(UploadServiceImpl.java:62)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$FastClassBySpringCGLIB$$1e5446a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$EnhancerBySpringCGLIB$$4918ba39.uploadOSS(<generated>)
+	at com.soft1851.files.controller.FileUploadController.uploadSomeFiles(FileUploadController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-25 13:28:30.709 [http-nio-8004-exec-9] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:28:30.910 [http-nio-8004-exec-9] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+2020-11-25 13:28:30.916 [http-nio-8004-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+] with root cause
+com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:110)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:92)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:81)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:72)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:535)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:519)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:513)
+	at com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS(UploadServiceImpl.java:62)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$FastClassBySpringCGLIB$$1e5446a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$EnhancerBySpringCGLIB$$4918ba39.uploadOSS(<generated>)
+	at com.soft1851.files.controller.FileUploadController.uploadSomeFiles(FileUploadController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-25 13:28:56.864 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 13:28:57.319 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 13:28:58.788 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-25 13:28:59.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 13:28:59.772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 13:28:59.793 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 MongoDB repository interfaces.
+2020-11-25 13:28:59.808 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 13:28:59.809 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 13:28:59.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-11-25 13:29:00.029 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-25 13:29:00.486 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-25 13:29:00.499 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-25 13:29:00.499 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 13:29:00.499 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-25 13:29:00.712 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 13:29:00.712 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1910 ms
+2020-11-25 13:29:01.755 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 13:29:01.893 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 13:29:01.923 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 13:29:02.626 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 13:29:02.626 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 13:29:02.627 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 13:29:02.627 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 13:29:02.791 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 13:29:04.415 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-25 13:29:04.444 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-25 13:29:05.638 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 13:29:05.645 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 13:29:05.655 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 13:29:05.769 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-25 13:29:05.785 [main] INFO  com.soft1851.files.Application - Started Application in 10.825 seconds (JVM running for 12.744)
+2020-11-25 13:29:11.817 [cluster-ClusterId{value='5fbdeb9da937257a6ba36d8b', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 120.26.177.51:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:591)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-11-25 13:29:39.898 [http-nio-8004-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-25 13:29:39.898 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-11-25 13:29:39.921 [http-nio-8004-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2020-11-25 13:29:40.139 [http-nio-8004-exec-1] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:29:41.081 [http-nio-8004-exec-1] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+2020-11-25 13:29:41.109 [http-nio-8004-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+] with root cause
+com.aliyun.oss.OSSException: 返回结果无效，无法解析。
+[ErrorCode]: InvalidResponse
+[RequestId]: null
+[HostId]: null
+[ResponseError]:
+<html>
+<head><title>405 Not Allowed</title></head>
+<body bgcolor="white">
+<center><h1>405 Not Allowed</h1></center>
+<hr><center>nginx/1.13.3</center>
+</body>
+</html>
+
+	at com.aliyun.oss.common.utils.ExceptionFactory.createOSSException(ExceptionFactory.java:110)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:92)
+	at com.aliyun.oss.common.utils.ExceptionFactory.createInvalidResponseException(ExceptionFactory.java:81)
+	at com.aliyun.oss.internal.OSSErrorResponseHandler.handle(OSSErrorResponseHandler.java:72)
+	at com.aliyun.oss.common.comm.ServiceClient.handleResponse(ServiceClient.java:257)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequestImpl(ServiceClient.java:140)
+	at com.aliyun.oss.common.comm.ServiceClient.sendRequest(ServiceClient.java:70)
+	at com.aliyun.oss.internal.OSSOperation.send(OSSOperation.java:83)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:145)
+	at com.aliyun.oss.internal.OSSOperation.doOperation(OSSOperation.java:102)
+	at com.aliyun.oss.internal.OSSObjectOperation.writeObjectInternal(OSSObjectOperation.java:1133)
+	at com.aliyun.oss.internal.OSSObjectOperation.putObject(OSSObjectOperation.java:130)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:535)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:519)
+	at com.aliyun.oss.OSSClient.putObject(OSSClient.java:513)
+	at com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS(UploadServiceImpl.java:62)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$FastClassBySpringCGLIB$$1e5446a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.soft1851.api.aspect.ServiceLogAspect.recordTimeOfService(ServiceLogAspect.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691)
+	at com.soft1851.files.service.impl.UploadServiceImpl$$EnhancerBySpringCGLIB$$b76cce49.uploadOSS(<generated>)
+	at com.soft1851.files.controller.FileUploadController.uploadSomeFiles(FileUploadController.java:143)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-11-25 13:30:42.058 [cluster-ClusterId{value='5fbdeb9da937257a6ba36d8b', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:6, serverValue:243}] to 120.26.177.51:27017
+2020-11-25 13:30:42.159 [cluster-ClusterId{value='5fbdeb9da937257a6ba36d8b', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=99376200}
+2020-11-25 13:30:43.721 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:30:44.162 [http-nio-8004-exec-2] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：441
+2020-11-25 13:31:46.929 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - =====开始执行 class com.soft1851.files.service.impl.UploadServiceImpl.uploadOSS====
+2020-11-25 13:31:47.185 [http-nio-8004-exec-3] INFO  c.s.api.aspect.ServiceLogAspect - 当前执行耗时：256
+2020-11-25 13:32:46.075 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2020-11-25 13:32:46.575 [background-preinit] WARN  o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-11-25 13:32:47.955 [main] INFO  com.soft1851.files.Application - The following profiles are active: dev
+2020-11-25 13:32:48.978 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 13:32:48.979 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-25 13:32:48.997 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-11-25 13:32:49.010 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 13:32:49.011 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 13:32:49.025 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-11-25 13:32:49.296 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d922f0d9-072c-3576-8b06-132942a61e58
+2020-11-25 13:32:49.769 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8004 (http)
+2020-11-25 13:32:49.780 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8004"]
+2020-11-25 13:32:49.780 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-11-25 13:32:49.781 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-25 13:32:49.967 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-11-25 13:32:49.967 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1997 ms
+2020-11-25 13:32:51.152 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[120.26.177.51:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-11-25 13:32:51.338 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 13:32:51.377 [main] WARN  o.s.data.convert.CustomConversions - Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-11-25 13:32:51.391 [cluster-ClusterId{value='5fbdec839560f84fd67649dc', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:244}] to 120.26.177.51:27017
+2020-11-25 13:32:51.451 [cluster-ClusterId{value='5fbdec839560f84fd67649dc', description='null'}-120.26.177.51:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=120.26.177.51:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 2]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=55037000}
+2020-11-25 13:32:52.148 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 13:32:52.148 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 13:32:52.152 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-11-25 13:32:52.153 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 13:32:52.333 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 13:32:54.176 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8004"]
+2020-11-25 13:32:54.205 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8004 (http) with context path ''
+2020-11-25 13:32:57.543 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2020-11-25 13:32:57.582 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-11-25 13:32:57.605 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2020-11-25 13:32:58.011 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: uploadFileUsingPOST_1
+2020-11-25 13:32:58.061 [main] INFO  com.soft1851.files.Application - Started Application in 13.918 seconds (JVM running for 15.92)

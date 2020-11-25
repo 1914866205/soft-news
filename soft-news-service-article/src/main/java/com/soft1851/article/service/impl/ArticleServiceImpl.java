@@ -34,8 +34,8 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public void createArticle(NewArticleBO newArticleBO, Category category) {
-        System.out.println("newArticleBO"+newArticleBO);
-        System.out.println("category"+category);
+//        System.out.println("newArticleBO"+newArticleBO);
+//        System.out.println("category"+category);
         String articleId = sid.nextShort();
         Article article = new Article();
 
@@ -49,12 +49,20 @@ public class ArticleServiceImpl implements ArticleService {
         article.setIsDelete(YesOrNo.NO.type);
         article.setCreateTime(new Date());
         article.setUpdateTime(new Date());
-        if (article.getIsAppoint().equals(ArticleAppointType.TIMING.type)){
+        if (article.getIsAppoint().equals(ArticleAppointType.TIMING.type)) {
             article.setPublishTime(newArticleBO.getPublishTime());
         } else if (article.getIsAppoint().equals(ArticleAppointType.IMMEDIATELY.type)) {
             article.setPublishTime(new Date());
         }
-
+        System.out.println("*************************");
+        System.out.println(article.getIsAppoint());
+        System.out.println(ArticleAppointType.TIMING.type);
+        System.out.println(ArticleAppointType.IMMEDIATELY.type);
+        System.out.println(article.getIsAppoint().equals(ArticleAppointType.TIMING.type));
+        System.out.println(article.getIsAppoint().equals(ArticleAppointType.IMMEDIATELY.type));
+        System.out.println(article.getPublishTime());
+        System.out.println("*************************");
+//        System.out.println("要插入的article"+article);
         int res = articleMapper.insert(article);
         if (res != 1) {
             GraceException.display(ResponseStatusEnum.ARTICLE_CREATE_ERROR);
