@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 /**
@@ -44,6 +45,7 @@ public interface ArticleControllerApi {
 
     /**
      * 用户撤回文章
+     *
      * @param userId
      * @param articleId
      * @return
@@ -54,6 +56,7 @@ public interface ArticleControllerApi {
 
     /**
      * 用户删除文章
+     *
      * @param userId
      * @param articleId
      * @return
@@ -63,9 +66,9 @@ public interface ArticleControllerApi {
     GraceResult delete(@RequestParam String userId, @RequestParam String articleId);
 
 
-
     /**
      * 查询文章详情
+     *
      * @param articleId 文章id
      * @return
      */
@@ -73,4 +76,13 @@ public interface ArticleControllerApi {
     @ApiOperation(value = "文章详情查询", notes = "文章详情查询", httpMethod = "GET")
     GraceResult queryDetail(@RequestParam String articleId);
 
+    /**
+     * 阅读文章，增加阅读量
+     * @param articleId
+     * @param request
+     * @return
+     */
+    @ApiOperation(value = "阅读文章，增加阅读量", notes = "阅读文章，增加阅读量", httpMethod = "POST")
+    @PostMapping("readArticle")
+    GraceResult readArticle(@RequestParam String articleId, HttpServletRequest request);
 }
