@@ -2,6 +2,7 @@ package com.soft1851.article.service;
 
 import com.soft1851.bo.NewArticleBO;
 import com.soft1851.pojo.Category;
+import com.soft1851.vo.ArticleDetailVO;
 
 /**
  * @author 倪涛涛
@@ -43,8 +44,16 @@ public interface ArticleService {
 
     /**
      * 撤回文章
-     * @param userId 用户id
+     *
+     * @param userId    用户id
      * @param articleId 文章id
      */
     void withdrawArticle(String userId, String articleId);
+
+    /**
+     * 查询文章详情
+     * @param articleId
+     * @return
+     */
+    ArticleDetailVO queryDetail(String articleId);
 }

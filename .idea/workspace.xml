@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea0335e5-124c-4dfe-8ee4-ff60bfa57dea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/soft-news-common/src/main/java/com/soft1851/common/enums/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/vo/FansCountsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/vo/RegionRatioVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soft-news-model/src/main/java/com/soft1851/vo/ArticleDetailVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/FansControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/FansControllerApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/FansController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/FansController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/FanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/FanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/FanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/service/impl/FanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/article/ArticleControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/article/ArticleControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-api/src/main/java/com/soft1851/api/controller/user/UserControllerApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/ArticleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/ArticleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/controller/ArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/controller/ArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/impl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-article/src/main/java/com/soft1851/article/service/impl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/java/com/soft1851/user/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-26.log" beforeDir="false" afterPath="$PROJECT_DIR$/soft-news-service-user/src/main/resources/log/service-user.2020-11-26.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +59,8 @@
         <option value="Kotlin File" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +111,7 @@
     <property name="project.structure.proportion" value="0.15625" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
@@ -280,7 +282,7 @@
       <workItem from="1606199214858" duration="12735000" />
       <workItem from="1606262359588" duration="12195000" />
       <workItem from="1606309099753" duration="1523000" />
-      <workItem from="1606368199984" duration="7654000" />
+      <workItem from="1606368199984" duration="13392000" />
     </task>
     <servers />
   </component>
@@ -327,10 +329,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606185204122" />
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606379476420">
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1606385488212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606379476420" />
+    <state x="958" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606385488212" />
     <state x="446" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606217881698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -355,54 +357,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="980" y="197" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606201151801" />
-    <state width="929" height="106" key="GridCell.Tab.0.bottom" timestamp="1606379869890">
+    <state width="1493" height="387" key="GridCell.Tab.0.bottom" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606379869890" />
-    <state width="929" height="106" key="GridCell.Tab.0.center" timestamp="1606379869890">
+    <state width="1493" height="387" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="387" key="GridCell.Tab.0.center" timestamp="1606387902341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606379869890" />
-    <state width="929" height="106" key="GridCell.Tab.0.left" timestamp="1606379869890">
+    <state width="1493" height="387" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606387902341" />
+    <state width="1493" height="387" key="GridCell.Tab.0.left" timestamp="1606387902341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606379869890" />
-    <state width="929" height="106" key="GridCell.Tab.0.right" timestamp="1606379869890">
+    <state width="1493" height="387" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606387902341" />
+    <state width="1493" height="387" key="GridCell.Tab.0.right" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606379869890" />
-    <state width="929" height="106" key="GridCell.Tab.1.bottom" timestamp="1606379869891">
+    <state width="1493" height="387" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="387" key="GridCell.Tab.1.bottom" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606379869891" />
-    <state width="929" height="106" key="GridCell.Tab.1.center" timestamp="1606379869891">
+    <state width="1493" height="387" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="387" key="GridCell.Tab.1.center" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606379869891" />
-    <state width="929" height="106" key="GridCell.Tab.1.left" timestamp="1606379869890">
+    <state width="1493" height="387" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="387" key="GridCell.Tab.1.left" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606379869890" />
-    <state width="929" height="106" key="GridCell.Tab.1.right" timestamp="1606379869891">
+    <state width="1493" height="387" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="387" key="GridCell.Tab.1.right" timestamp="1606387902342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="929" height="106" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606379869891" />
-    <state width="1493" height="407" key="GridCell.Tab.2.bottom" timestamp="1606377093921">
+    <state width="1493" height="387" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606387902342" />
+    <state width="1493" height="350" key="GridCell.Tab.2.bottom" timestamp="1606387584218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="407" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606377093921" />
-    <state width="1493" height="407" key="GridCell.Tab.2.center" timestamp="1606377093921">
+    <state width="1493" height="350" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606387584218" />
+    <state width="1493" height="350" key="GridCell.Tab.2.center" timestamp="1606387584218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="407" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606377093921" />
-    <state width="1493" height="407" key="GridCell.Tab.2.left" timestamp="1606377093921">
+    <state width="1493" height="350" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606387584218" />
+    <state width="1493" height="350" key="GridCell.Tab.2.left" timestamp="1606387584217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="407" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606377093921" />
-    <state width="1493" height="407" key="GridCell.Tab.2.right" timestamp="1606377093921">
+    <state width="1493" height="350" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606387584217" />
+    <state width="1493" height="350" key="GridCell.Tab.2.right" timestamp="1606387584218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="407" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606377093921" />
+    <state width="1493" height="350" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606387584218" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1605978666989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -411,10 +413,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="598" y="89" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605795699186" />
-    <state x="498" y="0" key="SettingsEditor" timestamp="1606220286631">
+    <state x="498" y="0" key="SettingsEditor" timestamp="1606387495791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606220286631" />
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606387495791" />
     <state width="498" height="519" key="SwitcherDM" timestamp="1605596775689">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -13,6 +13,7 @@ import com.soft1851.common.result.ResponseStatusEnum;
 import com.soft1851.common.utils.AliTextReviewUtil;
 import com.soft1851.pojo.Article;
 import com.soft1851.pojo.Category;
+import com.soft1851.vo.ArticleDetailVO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.n3r.idworker.Sid;
@@ -149,5 +150,19 @@ public class ArticleServiceImpl implements ArticleService {
         criteria.andEqualTo("publishUserId", userId);
         criteria.andEqualTo("id", articleId);
         return articleExample;
+    }
+
+    @Override
+    public ArticleDetailVO queryDetail(String articleId) {
+        Article article = new Article();
+        article.setId(articleId);
+        article.setIsAppoint(YesOrNo.NO.type);
+        article.setIsDelete(YesOrNo.NO.type);
+        article.setArticleStatus(ArticleReviewStatus.SUCCESS.type);
+        Article result = articleMapper.selectByPrimaryKey(articleId);
+        ArticleDetailVO detailVO = new ArticleDetailVO();
+        BeanUtils.copyProperties(result, detailVO);
+        detailVO.setCover(result.getArticleCover());
+        return detailVO;
     }
 }
