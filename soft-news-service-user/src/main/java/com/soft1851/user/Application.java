@@ -2,6 +2,7 @@ package com.soft1851.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import tk.mybatis.spring.annotation.MapperScan;
 
@@ -12,7 +13,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  * @Description TODO
  * @createTime 2020年11月13日 21:02:00
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = MongoAutoConfiguration.class)
 @MapperScan(basePackages = "com.soft1851.user.mapper")
 @ComponentScan("com.soft1851")
 @ComponentScan("org.n3r")
